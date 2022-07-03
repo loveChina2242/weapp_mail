@@ -1,0 +1,147 @@
+.container{
+  background-color: cornflowerblue;
+  height: 500rpx;
+  width: 100%;
+  border-bottom-left-radius: 20%;
+  border-bottom-right-radius: 20%;
+}
+.logo{
+  height: 20px;
+}
+.flexItem{
+  display: flex;
+  justify-content: space-between;
+}
+.swiper-item{
+  margin:10px auto 0;
+  text-align: center;
+}
+.itemImg{
+  width: 350px;
+  height: 156px;
+}
+.locatBody{
+  position: absolute;
+  left: 35px;
+  top: 180px;
+  width: 80%;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 8%;
+  box-shadow: rgb(66, 66, 66) 10px 10px 20px 0 ;
+}
+.locaItem{
+  margin: 40px 10% ;
+  width:80%;
+  height: 50px;
+}
+
+.itemtext{
+  font-size: 28px;
+}
+ .img{
+  width: 50px;
+  height: 50px;
+}
+.tranBtn{
+  background-color: cornflowerblue;
+  color: #fff;
+}
+.callBox{
+  margin-top:150px;
+  border-radius: 50px;
+  height: 50px;
+}
+.callItem{
+
+  line-height: 50px;
+  text-align: center;
+}
+.arrow{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+.mailDetail{
+  margin: 20px 20px;
+  text-align: center;
+  color: white;
+}
+.detailItem{
+  width: 150px;
+  height: 150px;
+  border-radius: 10%;
+  box-shadow: rgb(112, 112, 112) 3px 2px 5px 2px;
+}
+.item1{
+  background-color: #a683ca;
+}
+.item2{
+  background-color: #fc9d62;
+}
+.carImg{
+  width: 89px;
+  height: 89px;
+}
+.arrowRight{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 30px 10px;
+  box-shadow: rgb(112, 112, 112) 3px 2px 5px 2px;
+}
+.arrow1{
+  background-color: #4e148c;
+}
+.arrow2{
+  background-color:#ff6200
+}
+.arrowImg{
+  width: 80%;
+  height: 100%;
+}
+.jsuanImg{
+  width: 74px;
+  height: 74px;
+}
+.easyText{
+  font-weight: 550;
+  margin-left: 18px;
+}
+.tranImg{
+  width: 100%;
+  height: 109px;
+ 
+}
+.copy{
+  width: 100%;
+  margin-top: 30px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 60rpx;
+}
+.textCenter{
+  width: 300px;
+  margin: 0 auto 20px;
+  font-size: 14px;
+  text-align: center;
+
+}
+.popupBox{
+  width: 310px;
+  height: 200px;
+  text-align: center;
+}
+.popuBtn{
+  width: 274px;
+  margin: auto;
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+}
+.popubtnItem{
+  width: 114px;
+  height: 40px;
+  margin:10px 10px;
+}
