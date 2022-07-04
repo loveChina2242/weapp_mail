@@ -1,0 +1,18 @@
+<!--components/copyAddress/copyAddress.wxml-->
+<view class="Copycontainer">
+  <view class="copyAddress">
+    <view class="loacGit">
+    <image class="iconImg" src="../../assets/images/location.png"></image> 仓库地址
+  </view>
+    <view>收件人：{{addressMsg.user}}</view>
+    <view>收件地址：{{addressMsg.addressLoca}}</view>
+    <view>联系电话：{{addressMsg.phone}}</view>
+    <view>邮政编码：{{addressMsg.code}}</view>
+  </view>
+
+<button class="copyMsg"  bindtap="copyMsg">一键复制仓库地址</button>
+<view>
+  <image class="copyDetail" src="../../assets/images/copyAddress.png"></image>
+</view>
+
+</view>

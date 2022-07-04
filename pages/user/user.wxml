@@ -1,2 +1,39 @@
-<!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+<view class='container'>
+  <view class='header'>
+    <!-- <open-data type="userAvatarUrl" class='avatar'></open-data> -->
+    <open-data type="userNickName" class='name'></open-data>
+    <text class="name">编码：HHH</text>
+  </view>
+  <view>
+    <view class='order'>
+        <van-cell is-link title="我的订单" link-type="switchTab" url="/pages/order/order" />
+      <view class='order-list'>
+        <navigator wx:for="{{orderData}}" wx:key="*this" class='order-item' url='{{item.url}}' hover-class='none'>
+          <image src='{{item.icon}}'  ></image>
+          <view>{{item.title}}</view>
+        </navigator>
+        <!-- <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
+          <image src='/assets/images/fahuo.png'></image>
+          <view>待发货</view>
+        </navigator>
+        <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
+          <image src='/assets/images/shouhuo.png'></image>
+          <view>待收货</view>
+        </navigator>
+        <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
+          <image src='/assets/images/pingjia.png'></image>
+          <view>待评价</view>
+        </navigator> -->
+      </view>
+    </view>
+    <view class='other' style="margin-bottom: 100rpx;">
+      <van-cell wx:for="{{info}}" wx:key="*this" is-link title="{{item.title}}" link-type="navigateTo" url="{{item.url}}" />
+      <!-- <van-cell is-link title="我的优惠券" link-type="navigateTo" url="/pages/dashboard/index" />
+      <van-cell is-link title="活动中心" link-type="navigateTo" url="/pages/dashboard/index" />
+      <van-cell is-link title="联系客服" link-type="navigateTo" url="/pages/dashboard/index" />
+      <van-cell is-link title="转运流程" link-type="navigateTo" url="/pages/dashboard/index" />
+      <van-cell is-link title="转运须知" link-type="navigateTo" url="/pages/dashboard/index" />
+      <van-cell is-link title="关于我们" link-type="navigateTo" url="/pages/dashboard/index" /> -->
+    </view>
+  </view>
+</view>

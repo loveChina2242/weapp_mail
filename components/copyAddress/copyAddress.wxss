@@ -1,0 +1,46 @@
+/* components/copyAddress/copyAddress.wxss */
+
+
+.Copycontainer{
+  padding:20px 10px 10px;
+}
+.copyAddress{
+  width: 330px;
+  height: 230px;
+  padding: 0 10px;
+  margin: auto;
+  box-shadow: rgb(128, 128, 128) 5px 3px 10px 3px;
+}
+.iconImg{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(238, 174, 79);
+  margin-top: 5px;
+}
+.copyMsg{
+  margin: 20px;
+  border-radius: 60rpx;
+  color: white;
+  background-color: cornflowerblue;
+}
+.copyDetail{
+  width: 348px;
+  height: 435px;
+}
+.gotranBtn{
+  width:114px;
+}
+.popubtnItem{
+  background-color: #fff;
+  color: cornflowerblue;
+}
+.loacGit{
+  font-weight: 600;
+  text-align: center;
+}
+.copyAddress view{
+  margin: 10px 20px;
+  text-align:left;
+  font-size: 16px;
+}

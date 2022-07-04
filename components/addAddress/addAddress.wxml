@@ -1,0 +1,64 @@
+<!--components/copyAddress/copyAddress.wxml-->
+<view class="Copycontainer">
+  <view class="copyAddress">
+    <view class="loacGit">
+      <image class="iconImg" src="../../assets/images/location.png"></image> 仓库地址
+    </view>
+    <view class="addressmsg">
+      <view>张三</view>
+      <view class="empty"></view>
+      <view>18900002222 <text class="copyInfo" catchtap="copyInfo">复制</text></view>
+    </view>
+    <view class="addressCity">广东省深圳市龙华观澜街道银星科技大厦</view>
+  </view>
+
+  <view class="copyAddress">
+    <view class="loacGit" style="height: 350px;">
+      目标国收件信息
+      <view class="tip">
+        <view class="tipText">
+          <icon type="warn" size="14"></icon>请用英文填写
+        </view>
+        <navigator open-type="navigate" url="/components/myAddress/myAddress" class="seleBtn" >选择地址</navigator>
+      </view>
+
+
+      <!-- shuru -->
+      <van-cell-group>
+
+        <van-field value="{{ username }}" required 
+        clearable label="Name" 
+        bind:blur="getValue"
+
+        placeholder="Please enter the username"  />
+
+        <van-field value="{{ phone }}" 
+        type="number" label="Phone" 
+        placeholder="Please enter the phone" required 
+       />
+        <!-- error-message="手机号格式错误" -->
+        <van-field value="{{ address }}" 
+        type="text" label="Address" 
+        placeholder="Please enter the address" required 
+        />
+
+        <van-field value="{{ city }}" 
+        type="text" label="City" 
+        placeholder="Please enter the city" required 
+         />
+
+        
+        <van-field value="{{ postcode }}" 
+        type="text" label="PostCode" 
+        placeholder="Please enter the postcode" required 
+      />
+
+      </van-cell-group>
+
+    </view>
+  </view>
+
+  <view class="bottomBtn">
+    <button class="Bbtn">立即转运</button>
+  </view>
+</view>

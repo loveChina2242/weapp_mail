@@ -1,31 +1,34 @@
 <view class="container">
-<view class="logo"></view>
-  <swiper indicator-dots="true"
-  circular="true"
-        autoplay="true" interval="3000" >
-        <block wx:for="{{swiperImg}}" wx:key="*this">
-          <swiper-item>
-            <view class="swiper-item"><image  class="itemImg" src="{{item.img}}"></image></view>
-          </swiper-item>
-        </block>
-      </swiper>
+  <view class="logo"></view>
+  <swiper indicator-dots="true" circular="true" autoplay="true" interval="3000">
+    <block wx:for="{{swiperImg}}" wx:key="*this">
+      <swiper-item>
+        <view class="swiper-item">
+          <image class="itemImg" src="{{item.img}}"></image>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
 
-      <view class="locatBody">
+  <view class="locatBody">
     <view class="locaItem flexItem">
       <view class="itemtext">中国</view>
-      <view class="itemicon"><image class="img" src="../../assets/images/sharpicons_airplane.png"></image></view>
+      <view class="itemicon">
+        <image class="img" src="../../assets/images/sharpicons_airplane.png"></image>
+      </view>
       <view class="itemtext">美国</view>
     </view>
-    <button class="tranBtn"   bindtap="goTransfer" >立即转运</button>
+    <button class="tranBtn gotranBtn"  bindtap="goTransfer">立即转运</button>
     <van-popup show="{{show}}" bind:close="onClose">
       <view class="popupBox">
         <text class="popuptext">预选渠道</text>
-        <view class="popuBtn" >
-          <button class="tranBtn popubtnItem">普通货物</button>
-          <button class="tranBtn popubtnItem">电子产品</button>
-          <button class="tranBtn popubtnItem">液体粉末</button>
-          <button class="tranBtn popubtnItem">内地EMS</button>
-          <button class="tranBtn popubtnItem">广东EMS</button>
+        <view class="popuBtn">
+          <vant-button wx:for="{{btnMsg}}" wx:key="*this" 
+          class="popubtnItem " catchtap="selecBtn" 
+          data-index="{{item.text}}"
+           style="{{item.text===selecBtn? 'background:cornflowerblue':'background:#FFF'}}"
+          >{{item.text}}</vant-button>
+          
         </view>
       </view>
       <view class="popufooter flexItem">
@@ -33,41 +36,41 @@
         <button bindtap="goAddress">下一步</button>
       </view>
     </van-popup>
-</view>
+  </view>
 </view>
 
 <!-- kefu -->
 <view class="callBox tranBtn">
-<view class="callItem flexItem">
-  <image class="img" src="../../assets/images/call.png"></image>
-  <view>
-  <text >有疑问?请联系客服哦~</text>
+  <view class="callItem flexItem">
+    <image class="img" src="../../assets/images/call.png"></image>
+    <view>
+      <text>有疑问?请联系客服哦~</text>
+    </view>
+    <view>
+      <image class="arrow" src="../../assets/images/arrow-right.png">
+      </image>
+    </view>
   </view>
-  <view>
-   <image class="arrow" src="../../assets/images/arrow-right.png">
-    </image>
-  </view>
-</view>
 </view>
 <!-- zhuyi -->
-<view class="flexItem mailDetail" >
+<view class="flexItem mailDetail">
   <view class="detailItem item1">
     <view class="itemtext">转运须知</view>
-    <view >流程和注意事项</view>
+    <view>流程和注意事项</view>
     <view class="flexItem detailIcon">
-    <view class="arrowRight arrow1">
-      <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
-    </view>
+      <view class="arrowRight arrow1">
+        <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
+      </view>
       <image class="carImg" src="../../assets/images/car.png"></image>
     </view>
   </view>
   <view class="detailItem item2">
     <view class="itemtext">转运须知</view>
-    <view >流程和注意事项</view>
+    <view>流程和注意事项</view>
     <view class="flexItem detailIcon">
-    <view class="arrowRight arrow2">
-      <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
-    </view>
+      <view class="arrowRight arrow2">
+        <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
+      </view>
       <image class="jsuanImg" src="../../assets/images/jsuan.png"></image>
     </view>
   </view>
@@ -76,10 +79,12 @@
 <!-- qingsong -->
 <view>
   <view class="itemtext easyText">轻松转运</view>
-  <view><image class="tranImg" src="../../assets/images/tranfrom.png"></image></view>
+  <view>
+    <image class="tranImg" src="../../assets/images/tranfrom.png"></image>
+  </view>
 </view>
 
 <!-- fuzhi -->
 <!-- <van-button class=" tranBtn"block>复制仓库地址去购物</van-button> -->
-<view class="copy tranBtn">复制仓库地址去购物</view>
-<view class="textCenter" >电商平台收货地址请填写该地址</view>
+<navigator url="/components/copyAddress/copyAddress" open-type="navigate" class="copy tranBtn">复制仓库地址去购物</navigator>
+<view class="textCenter">电商平台收货地址请填写该地址</view>

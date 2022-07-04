@@ -6,26 +6,26 @@
   border-bottom-right-radius: 20%;
 }
 .logo{
-  height: 20px;
+  height: 40rpx;
 }
 .flexItem{
   display: flex;
   justify-content: space-between;
 }
 .swiper-item{
-  margin:10px auto 0;
+  margin:20rpx auto 0;
   text-align: center;
 }
 .itemImg{
-  width: 350px;
-  height: 156px;
+  width: 700rpx;
+  height: 312rpx;
 }
 .locatBody{
   position: absolute;
-  left: 35px;
+  left: 70rpx;
   top: 180px;
   width: 80%;
-  height: 200px;
+  height: 400rpx;
   background-color: #fff;
   border-radius: 8%;
   box-shadow: rgb(66, 66, 66) 10px 10px 20px 0 ;
@@ -33,15 +33,15 @@
 .locaItem{
   margin: 40px 10% ;
   width:80%;
-  height: 50px;
+  height: 100rpx;
 }
 
 .itemtext{
   font-size: 28px;
 }
  .img{
-  width: 50px;
-  height: 50px;
+  width: 100rpx;
+  height: 100rpx;
 }
 .tranBtn{
   background-color: cornflowerblue;
@@ -57,6 +57,7 @@
   line-height: 50px;
   text-align: center;
 }
+
 .arrow{
   width: 30px;
   height: 30px;
@@ -141,7 +142,18 @@ justify-content: flex-start;
 flex-wrap: wrap;
 }
 .popubtnItem{
-  width: 114px;
-  height: 40px;
-  margin:10px 10px;
+  width: 228rpx;
+  height: 80rpx;
+  margin:8px ;
+  line-height: 80rpx;
+  border: 1px solid rgb(60, 154, 216);
+  color: rgb(0, 0, 0);
+
 }
+.gotranBtn{
+  width: 360rpx;
+}
+
+/* .popuBtn :active{
+  background-color: cornflowerblue;
+} */

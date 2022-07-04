@@ -1,0 +1,25 @@
+<!--components/cotsEstimate/cotsEstimate.wxml-->
+<view class="container">
+  <image class="Img" src="/assets/images/pay.png"></image>
+  <view class="countbody">
+    <view class="countText">预估运费</view>
+
+    <view class="countBtn">
+      <view class="btnInfo info1">
+      <view class="btnText">转运渠道 普通货物</view> 
+      </view>
+      <view class="btnInfo info2">
+      <view class="btnText">预估重量 请输入重量</view> 
+      </view>
+    </view>
+
+    <view class="volume volume1">
+      <view class="volumeText">预估体积</view>
+      <view class="volumeText">请输入长宽高</view>
+    </view>
+    <view class="volume volume2">
+      <view class="volumeText">预估运费（实际结果以订单为准）</view>
+      <view class="volumeText">¥ 0.00</view>
+    </view>
+  </view> 
+</view>

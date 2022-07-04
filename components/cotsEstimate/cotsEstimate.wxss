@@ -1,0 +1,77 @@
+/* components/cotsEstimate/cotsEstimate.wxss */
+page{
+  height: 100%;
+}
+.Img {
+  width: 375px;
+  height: 566px;
+}
+
+.countbody {
+  padding: 30rpx;
+}
+
+.countText {
+  width: 144rpx;
+  height: 50rpx;
+  color: rgba(16, 16, 16, 100);
+  font-size: 18px;
+  text-align: left;
+  font-family: PingFangSC-semiBold;
+}
+
+.countBtn {
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20rpx;
+}
+
+.btnInfo {
+  width: 154px;
+  height: 172rpx;
+  border-radius: 14px;
+  background-color: rgba(8, 129, 236, 48);
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(187, 187, 187, 100);
+}
+
+.btnText {
+  width: 160rpx;
+  text-align: center;
+  line-height: 70rpx;
+  margin: 20rpx auto;
+}
+
+.info1 {
+  background-color: #89c3f6;
+  color: #0881EC;
+}
+
+.info2 {
+  background-color: #89ec9c;
+  color: #0AAC29;
+}
+.volume1{
+  margin-top: 150rpx;
+  background-color: #90aef6;
+}
+.volume {
+  width: 100%;
+  height: 160rpx;
+  line-height: 70rpx;
+  border-radius: 14px;
+ 
+  text-align: center;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+  font-family: Arial;
+}
+.volumeText{
+  line-height: 100rpx;
+  height: 50rpx;
+  color: white;
+}
+.volume2{
+  margin: 40rpx auto 100rpx;
+  background-color: #0B73F7;
+}

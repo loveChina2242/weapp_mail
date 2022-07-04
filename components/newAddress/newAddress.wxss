@@ -1,0 +1,25 @@
+page{
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  padding: 20rpx;
+}
+.flex{
+  margin: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx
+}
+.bottomBtn{
+  margin: 40rpx 40rpx;
+
+}
+.Bbtn{
+  width: 400rpx;
+  margin: auto;
+  color: #fff;
+  font-size: 28rpx;
+  background-color: cornflowerblue;
+}

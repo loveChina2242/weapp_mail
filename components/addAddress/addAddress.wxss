@@ -1,0 +1,70 @@
+.Copycontainer{
+  padding:40rpx 20rpx 20rpx;
+}
+.copyAddress{
+  width: 600rpx;
+  padding: 0 40rpx;
+  margin: auto;
+  box-shadow: rgb(151, 151, 151) 10rpx 6rpx 12rpx 4rpx;
+}
+.iconImg{
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background-color: rgb(238, 174, 79);
+  margin-top: 10rpx;
+}
+.addressmsg{
+  display: flex;
+  justify-content: flex-start;
+  margin:20rpx 40rpx;
+}
+.copyInfo{
+  font-size: 20rpx;
+  color: #40B850;
+  border: 2rpx solid #ccc;
+}
+.empty{
+  width: 120rpx;
+}
+.addressCity{
+  margin: 0 40rpx 48rpx;
+  font-size: 14px;
+  color:#999999;
+  line-height: 80rpx;
+}
+.tip{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx;
+}
+.tipText{
+  color: #f76260;
+  font-size: 24rpx;
+}
+.seleBtn{
+  border: 2rpx solid #ccc;
+  color:  #41b95e;
+  background-color: #d9f1dd;
+  border-radius: 5%;
+  font-size: 28rpx;
+  width: 120rpx;
+  height: 40rpx;
+}
+
+.van-cell{
+  display: flex;
+  justify-content: space-between;
+}
+.loacGit{
+  padding: 20rpx;
+}
+.bottomBtn{
+  margin: 40rpx 40rpx;
+}
+.Bbtn{
+  width: 400rpx;
+  margin: auto;
+  color: #fff;
+  background-color: cornflowerblue;
+}

@@ -16,7 +16,8 @@ Page({
       {id:3,text:"液体粉末"},
       {id:4,text:"内地EMS"},
       {id:5,text:"广东EMS"},
-    ]
+    ],
+    selecBtn:[]
   },
 // 立即转运
 goTransfer(){
@@ -34,6 +35,23 @@ closeSelect(){
 },
 // 下一步
 goAddress(){
+  let _this = this; 
+  console.log(this.data.selecBtn);
+  // if( _this.data.selecBtn === ''){
+  //   return 
+  // }
+    wx.navigateTo({
+      url: '/components/addAddress/addAddress?id='+
+      _this.data.selecBtn,
+      // data:this.data.selecBtn
+    })
   
+
+},
+// 预选渠道
+selecBtn(e){
+  this.setData({
+    selecBtn:e.target.dataset.index
+  })
 }
 })

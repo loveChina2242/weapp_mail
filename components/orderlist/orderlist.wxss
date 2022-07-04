@@ -1,0 +1,74 @@
+/* components/orderlist/orderlist.wxss */
+
+/* pages/order/order.wxss */
+.orderBox{
+  margin:20rpx auto;
+  padding: 10rpx;
+ width: 340px;
+ height: 300rpx;
+ font-size: 28rpx;
+ text-align: center;
+ box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.4);
+ border: 1px solid rgba(255, 255, 255, 100);
+ }
+ .title{
+   display: flex;
+   justify-content: flex-start;
+   margin-top: 10rpx;
+   padding: 0 10px 0;
+ }
+ .locaItem{
+   margin: 50rpx 10% 31rpx;
+   width:80%;
+   height: 100rpx;
+ }
+ .itemtext{
+   font-size: 36rpx;
+   font-family: PingFangSC-regular
+ }
+  .img{
+   width: 80rpx;
+   height: 80rpx;
+ }
+ .flexItem{
+   display: flex;
+   justify-content: space-between;
+ }
+ .itemicon{
+   display: flex;
+   flex-direction: column;
+ }
+ .van-button{
+   float:right;
+ }
+ .copy{
+   background-color: #D9F1DD ;
+   width: 60rpx;
+ height: 28rpx;
+ border-radius: 8rpx;
+ background-color: rgba(217, 241, 221, 100);
+ color: rgba(64, 184, 80, 100);
+ font-size: 20rpx;
+ }
+ .orderBtn{
+   display: flex;
+   justify-content: flex-end;
+ }
+ .btn{
+   width: 170rpx;
+   height: 60rpx;
+   color: #fff;
+   line-height: 60rpx;
+   text-align: center;
+   font-size: 28rpx;
+   margin: 10rpx;
+ }
+ .btn1{
+ 
+   color:#6776d4 ;
+ }
+ .btn2{
+   background-color:#6776d4 ;
+ }
+ 
+ 

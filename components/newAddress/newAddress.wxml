@@ -1,0 +1,30 @@
+
+<view class="container">
+  <van-cell-group>
+
+    <!-- <van-field wx:for="{{Info}}" wx:key="*this" value="{{ item.value }}" required clearable
+     label="{{item.title}}" bind:blur="getValue" placeholder="{{item.plaText}}" /> -->
+
+    <van-field value="{{ Info.name }}" type="number" label="Name" placeholder="Please enter the Name" required />
+    <van-field value="{{ Info.phone }}" type="number" label="Phone" placeholder="Please enter the phone" required />
+    <van-field value="{{ Info.address }}" type="text" label="Address" placeholder="Please enter the address" required />
+    <van-field value="{{ Info.city }}" type="text" label="City" placeholder="Please enter the city" required />
+    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" placeholder="Please enter the postcode" required />
+    <van-field value="{{ Info.country }}" type="text" label="Country" placeholder="Please enter the country" required />
+   
+   
+   
+   <view class="flex">
+   <view class="defaluttext">设为默认</view>
+   <van-switch checked="{{checked}}" size="25px"   
+   active-color="#07c160" bind:change="onChange" />
+   </view>
+  </van-cell-group>
+  <view class="bottomBtn">
+    <button class="Bbtn" bindtap="commitAddress">提交</button>
+  </view>
+
+<view>
+  <van-area bind:confirm="confirm"  bind:cancel="cancel" area-list="{{ areaList }}" />
+</view>
+</view>
