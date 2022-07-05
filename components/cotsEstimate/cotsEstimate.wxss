@@ -44,12 +44,12 @@ page{
 }
 
 .info1 {
-  background-color: #89c3f6;
+  background-color: #a6cdf0;
   color: #0881EC;
 }
 
 .info2 {
-  background-color: #89ec9c;
+  background-color: #a6f5b6;
   color: #0AAC29;
 }
 .volume1{
@@ -73,5 +73,14 @@ page{
 }
 .volume2{
   margin: 40rpx auto 100rpx;
-  background-color: #0B73F7;
+  background-color: #4696ff;
+}
+.van-radio{
+  width: 450rpx;
+  height: 80rpx;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  text-align: center;
+  margin:0 20rpx;
+  font-size: 28rpx;
+  justify-content: space-between;
 }

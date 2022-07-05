@@ -1,0 +1,10 @@
+/* components/transferknow/transferknow.wxss */
+.btn{
+  position: absolute;
+  bottom: 100rpx;
+  left: 250rpx;
+  width: 250rpx;
+  margin: auto;
+  color: white;
+  font-size: 28rpx;
+}

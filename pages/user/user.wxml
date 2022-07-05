@@ -8,7 +8,7 @@
     <view class='order'>
         <van-cell is-link title="我的订单" link-type="switchTab" url="/pages/order/order" />
       <view class='order-list'>
-        <navigator wx:for="{{orderData}}" wx:key="*this" class='order-item' url='{{item.url}}' hover-class='none'>
+        <navigator wx:for="{{orderData}}" wx:key="*this" class='order-item' open-type="switchTab" url='{{item.url}}' hover-class='none'>
           <image src='{{item.icon}}'  ></image>
           <view>{{item.title}}</view>
         </navigator>
@@ -27,7 +27,7 @@
       </view>
     </view>
     <view class='other' style="margin-bottom: 100rpx;">
-      <van-cell wx:for="{{info}}" wx:key="*this" is-link title="{{item.title}}" link-type="navigateTo" url="{{item.url}}" />
+      <van-cell wx:for="{{info}}" wx:key="*this" is-link title="{{item.title}}" link-type="{{item.urlType}}" url="{{item.url}}" />
       <!-- <van-cell is-link title="我的优惠券" link-type="navigateTo" url="/pages/dashboard/index" />
       <van-cell is-link title="活动中心" link-type="navigateTo" url="/pages/dashboard/index" />
       <van-cell is-link title="联系客服" link-type="navigateTo" url="/pages/dashboard/index" />

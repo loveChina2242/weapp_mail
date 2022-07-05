@@ -1,1 +1,11 @@
 /* pages/coupon/coupon.wxss */
+.youhui{
+  margin:20rpx auto;
+  text-align: center;
+}
+.img {
+  width: 666rpx;
+  height: 240rpx;
+  border-radius: 12px;
+  margin:20rpx auto;
+}

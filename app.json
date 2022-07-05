@@ -10,7 +10,10 @@
     "components/myAddress/myAddress",
     "components/newAddress/newAddress",
     "components/cotsEstimate/cotsEstimate",
-    "components/orderlist/orderlist"
+    "components/orderlist/orderlist",
+    "components/transferknow/transferknow",
+    "components/countrysearch/countrysearch",
+    "components/orderdetail/orderdetail"
   ],
   "tabBar": {
 

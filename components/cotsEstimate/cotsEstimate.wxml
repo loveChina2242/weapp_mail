@@ -5,9 +5,18 @@
     <view class="countText">预估运费</view>
 
     <view class="countBtn">
-      <view class="btnInfo info1">
+      <view class="btnInfo info1" bindtap="seletype">
       <view class="btnText">转运渠道 普通货物</view> 
       </view>
+      <van-popup show="{{ show }}" close-on-click-overlay bind:close="onClose">
+        <van-radio-group value="{{ radio }}"  bind:change="onChangeradio">
+            <van-radio name="1">普通货物</van-radio>
+            <van-radio name="2">电子产品</van-radio>
+            <van-radio name="3">液体粉末</van-radio>
+            <van-radio name="4">内地ESM</van-radio>
+            <van-radio name="5">广东ESM</van-radio>
+        </van-radio-group>
+      </van-popup>
       <view class="btnInfo info2">
       <view class="btnText">预估重量 请输入重量</view> 
       </view>

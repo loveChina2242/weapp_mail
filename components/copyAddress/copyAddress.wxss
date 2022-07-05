@@ -12,11 +12,17 @@
   box-shadow: rgb(128, 128, 128) 5px 3px 10px 3px;
 }
 .iconImg{
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: rgb(238, 174, 79);
-  margin-top: 5px;
+  width: 45rpx;
+  height: 45rpx;
+  margin-top: 20rpx;
+}
+.flexbox{
+  display: flex;
+  justify-content: flex-start;
+}
+.dizhi{
+  margin: 16rpx 16rpx;
+  font-size: 40rpx;
 }
 .copyMsg{
   margin: 20px;

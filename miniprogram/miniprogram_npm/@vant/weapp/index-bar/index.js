@@ -233,7 +233,7 @@ var indexList = function () {
                 return;
             }
             this.scrollToAnchorIndex = index;
-            var anchor = this.children.find(function (item) { return item.data.index === _this.data.indexList[index]; });
+            var anchor = this.children.find(function (item) { return item.data.index ===String( _this.data.indexList[index]); });
             if (anchor) {
                 anchor.scrollIntoView(this.scrollTop);
                 this.$emit('select', anchor.data.index);

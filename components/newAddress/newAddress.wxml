@@ -1,30 +1,66 @@
-
 <view class="container">
   <van-cell-group>
+<!-- 
+    <van-field wx:for="{{Info}}" wx:key="*this" value="{{ item.value }}"  clearable
+     label="{{item.title}}"bind:input="onblur" placeholder="{{item.plaText}}" data-id="{{index}}" /> -->
 
-    <!-- <van-field wx:for="{{Info}}" wx:key="*this" value="{{ item.value }}" required clearable
-     label="{{item.title}}" bind:blur="getValue" placeholder="{{item.plaText}}" /> -->
+     <van-field value="{{ Info.name }}" bind:input="getValue" type="number" label="Name" 
+    placeholder="Please enter the Name" error-message="{{errmsg}}" />
 
-    <van-field value="{{ Info.name }}" type="number" label="Name" placeholder="Please enter the Name" required />
-    <van-field value="{{ Info.phone }}" type="number" label="Phone" placeholder="Please enter the phone" required />
-    <van-field value="{{ Info.address }}" type="text" label="Address" placeholder="Please enter the address" required />
-    <van-field value="{{ Info.city }}" type="text" label="City" placeholder="Please enter the city" required />
-    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" placeholder="Please enter the postcode" required />
-    <van-field value="{{ Info.country }}" type="text" label="Country" placeholder="Please enter the country" required />
-   
-   
-   
-   <view class="flex">
-   <view class="defaluttext">设为默认</view>
-   <van-switch checked="{{checked}}" size="25px"   
-   active-color="#07c160" bind:change="onChange" />
-   </view>
+    <van-field value="{{ Info.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
+    placeholder="Please enter the phone" />
+
+    <van-field value="{{ Info.address }}" type="text" label="Address" 
+    placeholder="Please enter the address" bind:input="getaddress" error-message="{{errmsg3}}" />
+
+    <van-field value="{{ Info.city }}" type="text" label="City" 
+    placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
+
+    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" 
+    placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
+
+    <van-field value="{{ Info.country }}" type="text" label="Country"
+     placeholder="Please enter the country"  bind:input="getcountry" error-message="{{errmsg6}}"/>
+
+
+
+
+
+
+    <view class="flex">
+      <view class="defaluttext">设为默认</view>
+      <van-switch checked="{{checked}}" size="25px" active-color="#07c160" bind:change="onChange" />
+    </view>
   </van-cell-group>
+
+
+  <van-toast id="van-toast" />
+
+
+
   <view class="bottomBtn">
     <button class="Bbtn" bindtap="commitAddress">提交</button>
   </view>
 
-<view>
-  <van-area bind:confirm="confirm"  bind:cancel="cancel" area-list="{{ areaList }}" />
-</view>
+
+
+
+
+
+
+
+
+  <!-- <van-cell title="选择地址" is-link bind:click="showPopup" />
+  <van-popup show="{{show}}" 
+  position="bottom" custom-style="height: 40%;" 
+  bind:close="onClose" style="z-index: 10000000">
+    <van-area area-list="{{ areaList }}" 
+   
+    confirm-button-text="确定" 
+    cancel-button-text="取消" 
+ 
+    bind:confirm="confirm" bind:cancel="cancel"  />
+  </van-popup> -->
+
+
 </view>

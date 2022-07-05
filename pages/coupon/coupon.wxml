@@ -1,2 +1,4 @@
 <!--pages/coupon/coupon.wxml-->
-<text>优惠券</text>
+<view class="youhui" >
+  <image wx:for="{{img}}" wx:key="{{item.id}}" class ="img" src="{{item.url}}"></image>
+</view>

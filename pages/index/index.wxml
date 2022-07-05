@@ -16,7 +16,7 @@
       <view class="itemicon">
         <image class="img" src="../../assets/images/sharpicons_airplane.png"></image>
       </view>
-      <view class="itemtext">美国</view>
+      <view class="itemtext" catchtap="goselet">{{count?count:'美国'}}</view>
     </view>
     <button class="tranBtn gotranBtn"  bindtap="goTransfer">立即转运</button>
     <van-popup show="{{show}}" bind:close="onClose">
@@ -54,26 +54,26 @@
 </view>
 <!-- zhuyi -->
 <view class="flexItem mailDetail">
-  <view class="detailItem item1">
+  <navigator class="detailItem item1" url="/components/transferknow/transferknow">
     <view class="itemtext">转运须知</view>
-    <view>流程和注意事项</view>
+    <view >流程和注意事项</view>
     <view class="flexItem detailIcon">
       <view class="arrowRight arrow1">
         <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
       </view>
       <image class="carImg" src="../../assets/images/car.png"></image>
-    </view>
   </view>
-  <view class="detailItem item2">
-    <view class="itemtext">转运须知</view>
-    <view>流程和注意事项</view>
+</navigator>
+  <navigator class="detailItem item2" url="/components/cotsEstimate/cotsEstimate">
+    <view class="itemtext">运费估算</view>
+    <view>费用心中有数</view>
     <view class="flexItem detailIcon">
       <view class="arrowRight arrow2">
         <image class="arrowImg" src="../../assets/images/arrow-right.png"></image>
       </view>
       <image class="jsuanImg" src="../../assets/images/jsuan.png"></image>
     </view>
-  </view>
+  </navigator>
 </view>
 
 <!-- qingsong -->

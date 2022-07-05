@@ -1,8 +1,8 @@
 <!--components/copyAddress/copyAddress.wxml-->
 <view class="Copycontainer">
   <view class="copyAddress">
-    <view class="loacGit">
-      <image class="iconImg" src="../../assets/images/location.png"></image> 仓库地址
+    <view class="loacGit flexbox">
+      <image class="iconImg" src="../../assets/images/dizhi.png"></image> <view class="dizhi"> 仓库地址</view>
     </view>
     <view class="addressmsg">
       <view>张三</view>
@@ -26,32 +26,22 @@
       <!-- shuru -->
       <van-cell-group>
 
-        <van-field value="{{ username }}" required 
-        clearable label="Name" 
-        bind:blur="getValue"
+        <van-field value="{{ Info.name }}" bind:input="getValue" type="number" label="Name" 
+    placeholder="Please enter the Name" error-message="{{errmsg}}" />
 
-        placeholder="Please enter the username"  />
+        <van-field value="{{ Info.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
+    placeholder="Please enter the phone" />
 
-        <van-field value="{{ phone }}" 
-        type="number" label="Phone" 
-        placeholder="Please enter the phone" required 
-       />
-        <!-- error-message="手机号格式错误" -->
-        <van-field value="{{ address }}" 
-        type="text" label="Address" 
-        placeholder="Please enter the address" required 
-        />
+    <van-field value="{{ Info.address }}" type="text" label="Address" 
+    placeholder="Please enter the address" bind:input="getaddress" error-message="{{errmsg3}}" />
 
-        <van-field value="{{ city }}" 
-        type="text" label="City" 
-        placeholder="Please enter the city" required 
-         />
+    <van-field value="{{ Info.city }}" type="text" label="City" 
+    placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
 
-        
-        <van-field value="{{ postcode }}" 
-        type="text" label="PostCode" 
-        placeholder="Please enter the postcode" required 
-      />
+    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" 
+    placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
+
+  
 
       </van-cell-group>
 
@@ -59,6 +49,6 @@
   </view>
 
   <view class="bottomBtn">
-    <button class="Bbtn">立即转运</button>
+    <button class="Bbtn" bindtap="commitAddress">立即转运</button>
   </view>
 </view>

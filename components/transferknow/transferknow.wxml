@@ -1,0 +1,5 @@
+
+
+<button class="btn" style="{{disabled?'':'background-color: cornflowerblue'}}" bindtap="nextStepTap" disabled="{{disabled}}"> {{msg}}
+
+</button>

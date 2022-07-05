@@ -1,0 +1,13 @@
+<!--components/countrysearch/countrysearch.wxml-->
+<view class="header">
+<van-search value="{{ value }}" placeholder="选择国家或地区" show-action bind:change="onSearch" bind:cancel="onCancel" />
+</view>
+<van-index-bar >
+  <view wx:for="{{newData}}" wx:key="index">
+    <van-index-anchor index="{{index}}" />
+    <view wx:for="{{item}}" wx:key="index" class="itemInfo" data-name="{{item.name}}" catchtap="clickCountry">
+      <view>{{item.name}}</view>
+      <view>{{item.egname}}</view>
+    </view>
+  </view>
+</van-index-bar>

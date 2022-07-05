@@ -1,0 +1,51 @@
+/* components/orderdetail/orderdetail.wxss */
+.header{
+  width: 347px;
+  line-height: 20px;
+  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 79);
+  color: rgba(16, 16, 16, 100);
+  text-align: center;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+.shouhuo{
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx auto;
+}
+.icon{
+  width: 20px;
+  height: 20px;
+  margin: 10px
+}
+.msg{
+  width: 300px;
+  text-align:start;
+}
+.name{
+  display: flex;
+  justify-content:flex-start;
+  color: rgba(16, 16, 16, 100);
+font-size: 15px;
+text-align: left;
+
+}
+.empty{
+  width: 20rpx;
+}
+.areadetail{
+  color: rgba(153, 153, 153, 100);
+font-size: 12px;
+text-align: left;
+}
+.copy{
+
+border-radius: 4px;
+background-color: rgba(217, 241, 221, 100);
+color: rgba(64, 184, 80, 100);
+font-size: 24rpx;
+text-align: center;
+border: 1px solid rgba(217, 241, 221, 100);
+}

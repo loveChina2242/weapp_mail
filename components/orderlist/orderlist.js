@@ -31,13 +31,6 @@ Component({
         }
       })
     },
-    // quxiao
-    cancel(e){
-      console.log("cancel");
-    },
-    // 
-    confirm(){
-      console.log('confirm');
-    }
+  
   }
 })

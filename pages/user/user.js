@@ -6,19 +6,19 @@ Page({
    */
   data: {
     orderData:[
-      { id:1,title:'待付款',icon:'/assets/images/waitpay.png',url:'' },
-      { id:2,title:'待发货',icon:'/assets/images/fahuo.png',url:'' },
-      { id:3,title:'待收货',icon:'/assets/images/shouhuo.png',url:''},
-      { id:4,title:'待评价',icon:'/assets/images/pingjia.png',url:''},
+      { id:1,title:'待付款',icon:'/assets/images/waitpay.png',url:'/pages/order/order' },
+      { id:2,title:'待发货',icon:'/assets/images/fahuo.png',url:'/pages/order/order' },
+      { id:3,title:'待收货',icon:'/assets/images/shouhuo.png',url:'/pages/order/order'},
+      { id:4,title:'待评价',icon:'/assets/images/pingjia.png',url:'/pages/order/order'},
     ],
     info:[
-      {id:1,title:"我的地址",url:''},
-      {id:2,title:"我的优惠券",url:''},
-      {id:3,title:"活动中心",url:''},
-      {id:4,title:"联系客服",url:''},
-      {id:5,title:"转运流程",url:''},
-      {id:6,title:"转运须知",url:''},
-      {id:7,title:"关于我们",url:''},
+      {id:1,title:"我的地址",url:'/components/myAddress/myAddress',urlType:'navigateTo'},
+      {id:2,title:"我的优惠券",url:'/pages/coupon/coupon',urlType:'switchTab'},
+      {id:3,title:"活动中心",url:'',urlType:'navigateTo'},
+      {id:4,title:"联系客服",url:'',urlType:'navigateTo'},
+      {id:5,title:"转运流程",url:'',urlType:'navigateTo'},
+      {id:6,title:"转运须知",url:'',urlType:'navigateTo'},
+      {id:7,title:"关于我们",url:'',urlType:'navigateTo'},
     ]
   },
 

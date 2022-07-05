@@ -102,8 +102,9 @@
   height: 100%;
 }
 .jsuanImg{
-  width: 74px;
-  height: 74px;
+  width: 70px;
+  height: 70px;
+  margin: 10rpx 12rpx;
 }
 .easyText{
   font-weight: 550;

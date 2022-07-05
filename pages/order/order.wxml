@@ -2,28 +2,6 @@
 <van-tabs sticky color="#4fc09a">
   <van-tab title="全部">
     <orderlist></orderlist>
-<!-- 
-    <view class="orderBox">
-    <view class="title">
-      <text>订单号：20220509140712345678</text>
-      <text class="copy">复制</text>
-    </view>
-   <view class="orderbody">
-    <view class="locaItem flexItem">
-      <view class="itemtext">中国</view>
-      <view class="itemicon">
-        <image class="img" src="../../assets/images/sharpicons_airplane.png"></image>
-        <text style="color:#6777d5 ; font-size: 28rpx;">待入仓</text>
-      </view>
-      <view class="itemtext">美国</view>
-    </view>
-    <view class="orderBtn">
-      <button class="btn btn1" >确认打包</button>
-      <button class="btn btn2">详情</button>
-    </view>
-   </view>
-    </view>
-  -->
   </van-tab>
 
   <van-tab title="待支付">内容 2</van-tab>
