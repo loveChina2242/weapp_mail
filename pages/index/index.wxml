@@ -40,7 +40,7 @@
 </view>
 
 <!-- kefu -->
-<view class="callBox tranBtn">
+<view class="callBox tranBtn" catchtap="concat">
   <view class="callItem flexItem">
     <image class="img" src="../../assets/images/call.png"></image>
     <view>
@@ -54,7 +54,7 @@
 </view>
 <!-- zhuyi -->
 <view class="flexItem mailDetail">
-  <navigator class="detailItem item1" url="/components/transferknow/transferknow">
+  <navigator class="detailItem item1" url="/pages/transferknow/transferknow">
     <view class="itemtext">转运须知</view>
     <view >流程和注意事项</view>
     <view class="flexItem detailIcon">
@@ -64,7 +64,7 @@
       <image class="carImg" src="../../assets/images/car.png"></image>
   </view>
 </navigator>
-  <navigator class="detailItem item2" url="/components/cotsEstimate/cotsEstimate">
+  <navigator class="detailItem item2" url="/pages/cotsEstimate/cotsEstimate">
     <view class="itemtext">运费估算</view>
     <view>费用心中有数</view>
     <view class="flexItem detailIcon">
@@ -86,5 +86,5 @@
 
 <!-- fuzhi -->
 <!-- <van-button class=" tranBtn"block>复制仓库地址去购物</van-button> -->
-<navigator url="/components/copyAddress/copyAddress" open-type="navigate" class="copy tranBtn">复制仓库地址去购物</navigator>
+<navigator url="/pages/copyAddress/copyAddress" open-type="navigate" class="copy tranBtn">复制仓库地址去购物</navigator>
 <view class="textCenter">电商平台收货地址请填写该地址</view>

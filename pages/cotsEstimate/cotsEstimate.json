@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "运费估算",
+  "navigationBarBackgroundColor": "#6495ed",
+  "usingComponents": {
+    "van-popup": "../../miniprogram/miniprogram_npm/@vant/weapp/popup/index",
+    "van-radio": "../../miniprogram/miniprogram_npm/@vant/weapp/radio/index",
+    "van-radio-group": "../../miniprogram/miniprogram_npm/@vant/weapp/radio-group/index"
+  }
+}

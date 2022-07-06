@@ -1,0 +1,96 @@
+.msgbox {
+  width: 693rpx;
+  line-height: 40rpx;
+  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 79);
+  color: rgba(16, 16, 16, 100);
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx 0px rgba(0, 0, 0, 0.4);
+  margin: 10px auto;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+
+.shouhuo {
+  display: flex;
+  justify-content: space-between;
+  margin: 40rpx auto;
+}
+
+.icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 20rpx
+}
+
+.msg {
+  width: 600rpx;
+  text-align: start;
+}
+
+.name {
+  display: flex;
+  justify-content: flex-start;
+  color: rgba(16, 16, 16, 100);
+  font-size: 30rpx;
+  text-align: left;
+
+}
+
+.empty {
+  width: 20rpx;
+}
+
+.areadetail {
+  color: rgba(153, 153, 153, 100);
+  font-size: 24rpx;
+  text-align: left;
+}
+.copy {
+
+  border-radius: 8rpx;
+  background-color: rgba(217, 241, 221, 100);
+  color: rgba(64, 184, 80, 100);
+  font-size: 24rpx;
+  text-align:left;
+  border: 1px solid rgba(217, 241, 221, 100);
+}
+.order{
+  padding: 30rpx 20rpx;
+}
+.flexitem{
+  display: flex;
+  justify-content: space-between;
+  margin: 20rpx 0;
+  font-size: 28rpx;
+}
+.van-cell__label{
+  width: 400rpx;
+  color: red;
+}
+.van-cell__title{
+  text-align: left;
+}
+.van-icon-coupon-o{
+  color: red;
+}
+.footer{
+  font-size: 28rpx;
+  height: 100rpx;
+  position: absolute;
+  bottom: 0;
+  border: 1px solid #ccc;
+}
+.foorbody{
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.topay{
+  line-height: 100rpx;
+   color: #fff;
+  background-color: rgb(34, 160, 76);
+}
+.footertext{
+  width: 520rpx;
+  margin-left: 20rpx;
+}

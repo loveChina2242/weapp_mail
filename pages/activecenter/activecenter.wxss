@@ -1,0 +1,7 @@
+.nodata{
+  margin: 40rpx;
+  text-align: center;
+}
+.nodatatip{
+  color: #686868;
+}

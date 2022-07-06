@@ -1,0 +1,53 @@
+<view class="container">
+  <view class="msgbox">
+    <view class="shouhuo">
+      <image class="icon" src="../../assets/images/dizhi.png"></image>
+      <view class="msg">
+        <view class="name">
+          <text>信息网仓库</text>
+          <text class="empty"></text>
+          <text>1900000888</text>
+          <text class="empty"></text>
+          <text class="copy">复制</text>
+        </view>
+        <view class="areadetail">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+      </view>
+    </view>
+
+  </view>
+  <view class="msgbox">
+    <view class="order">
+      <view class="flexitem"><text>订单号</text><text>20220509140712345678</text></view>
+      <view class="flexitem"><text>转运线路</text><text> 中国 - 美国</text></view>
+      <view class="flexitem"><text>预选渠道</text><text>普通货物</text></view>
+      <view class="flexitem"><text>货物属性</text><text>普通货物</text></view>
+      <view class="flexitem"><text>转运费</text><text>20220509140712345678</text></view>
+      <view class="flexitem"><text>附加费</text><text>￥138.00</text></view>
+      <view class="flexitem"><text>丢失险</text><text>￥0.00</text></view>
+      <view class="flexitem"><text>关税险</text><text>￥28.00</text></view>
+      <van-cell value="-￥8" icon="coupon-o" title="优惠券" is-link label="为您优先选择最优折扣优惠！">
+        <view slot="title">
+          <!-- <view class="van-cell-text">优惠券</view> -->
+
+        </view>
+      </van-cell>
+    </view>
+
+  </view>
+
+
+
+
+</view>
+
+ 
+  <!-- footer -->
+<view class="footer">
+<view class="foorbody">
+  <view class="footertext">
+    <text>订单总金额：￥138.00</text>
+    <van-checkbox value="{{ checked }}" bind:change="onChange">阅读并同意《电子运单契约条款》</van-checkbox>
+  </view>
+  <button class="topay" catchtap="topay">立即支付</button>
+</view>
+</view>

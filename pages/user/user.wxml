@@ -12,6 +12,7 @@
           <image src='{{item.icon}}'  ></image>
           <view>{{item.title}}</view>
         </navigator>
+     
         <!-- <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
           <image src='/assets/images/fahuo.png'></image>
           <view>待发货</view>

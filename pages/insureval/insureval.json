@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-switch": "../../miniprogram/miniprogram_npm/@vant/weapp/switch/index"
+  }
+}

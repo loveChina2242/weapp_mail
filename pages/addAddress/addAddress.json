@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "填写地址",
+  "navigationBarBackgroundColor": "#6495ed",
+  "backgroundTextStyle": "light",
+  "usingComponents": {
+    "van-field": "../../miniprogram/miniprogram_npm/@vant/weapp/field/index"
+  }
+}

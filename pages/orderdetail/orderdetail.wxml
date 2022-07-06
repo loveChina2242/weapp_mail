@@ -1,0 +1,104 @@
+<!--components/orderdetail/orderdetail.wxml-->
+<view class="container">
+
+<view class="msgbox">
+  <view class="shouhuo">
+    <image class="icon" src="../../assets/images/dizhi.png"></image>
+    <view class="msg">
+      <view class="name">
+        <text>信息网仓库</text>
+        <text class="empty"></text>
+        <text>1900000888</text>
+        <text class="empty"></text>
+        <text class="copy">复制</text>
+      </view>
+      <view class="areadetail">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+    </view>
+  </view>
+  <view class="shouhuo">
+    <image class="icon" src="../../assets/images/mudedi.png"></image>
+    <view class="msg">
+      <view class="name">
+        <text>zhangsan</text>
+        <text class="empty"></text>
+        <text>18339393933</text>
+
+      </view>
+      <view class="areadetail">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A
+        TUCSON, AZ 85705 USA</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="msgbox mailbody">
+  <view class="title">
+    <image class="tipicon" src="../../assets/images/tip.png"></image>
+    <text class="tip">快递全部到齐点击确认打包后，订单不可修改</text>
+  </view>
+  <view class="mailbox">
+    <van-field value="{{ numvalue }}" type="number" 
+    bind:blur="onblur" error-message="{{errmsg}}"
+    label="快递个数" type="number" placeholder="请输入（输入后弹出快递单号位置）" border="false" />
+  </view>
+  <view class="remark">
+    
+    <textarea class="textarea" name="备注信息" id="" cols="20" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
+  </view>
+
+
+  <!-- input -->
+
+  <view class="mailipt" wx:if="{{show}}">
+
+    <van-cell-group class="mailInput"  wx:for="{{numvalue}}" wx:key="index"  data-id="{{index}}">
+      <view class="num">{{index+1}}</view>
+      <van-field style="width:300px" value="{{ value }}"  
+      type="number" border placeholder="123456789"  catch:blur="onblueorder" data-order="{{index}}">
+        <van-button class="msgbtn"
+         data-id="{{index}}"  catchtap="deleteinfo" 
+         slot="button" size="small" type="primary">
+          <!-- 待入仓 -->
+          <van-icon name="delete-o" size='15' />
+        </van-button>
+      </van-field>
+    </van-cell-group>
+
+    <!-- <van-cell-group class="mailInput" >
+      <view class="num">2.</view>
+      <van-field value="{{ value }}"  border placeholder="123456789">
+        <van-button class="msgbtn"  slot="button" size="small" type="primary">
+          待入仓
+        </van-button>
+      </van-field>
+    </van-cell-group> -->
+
+    <button class="addbtn"  catchtap="addinfo">＋ 补充快递单号</button>
+  </view>
+</view>
+
+<view class="msgbox footer">
+<view class="bottomorder">
+<text>订单号：20220509140712345678</text>
+<text class="copy">复制</text>
+</view>
+
+<view class="bottomorder">
+<text>转运线路：中国 - 美国</text>
+</view>
+<view class="bottomorder">
+<text>预选渠道：普通货物</text>
+</view>
+<view class="bottomorder">
+<text>订单状态：<text style="color: #ffd75a;">待填写</text> </text>
+</view>
+<view class="bottomorder">
+<text>下单时间：2022-05-09 14:07:12</text>
+</view>
+</view>
+<view style="height: 300rpx;"></view>
+<view class="bottom">
+<button class="footerbtn btncolor1">联系客服</button>
+<button class="footerbtn btncolor2">确认打包</button>
+</view>
+</view>

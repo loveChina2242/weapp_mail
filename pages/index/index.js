@@ -1,17 +1,19 @@
 // pages/coupon/coupon.js
 Page({
   onShow(){
-    let arr = getApp()
-    console.log(arr.data.country);
+   let count =  wx.getStorageSync('country')
+    // let arr = getApp()
+    // console.log(arr.data.country);
     this.setData({
-      count:arr.data.country
+      count:count
     })
   },
   data: {
     count:'',
     swiperImg:[
-      {index:1,img:'../../assets/images/轮播图.png'},
-      {index:2,img:'../../assets/images/轮播图.png'},
+      {index:1,img:'../../assets/images/1.jpeg'},
+      {index:2,img:'../../assets/images/2.jpeg'},
+      {index:3,img:'../../assets/images/3.jpeg'},
     ],
     show: false,
     btnMsg:[
@@ -27,7 +29,7 @@ Page({
 // 选择国家
 goselet(){
   wx.navigateTo({
-    url: '/components/countrysearch/countrysearch',
+    url: '/pages/countrysearch/countrysearch',
   })
 },
 // 立即转运
@@ -52,7 +54,7 @@ goAddress(){
   //   return 
   // }
     wx.navigateTo({
-      url: '/components/addAddress/addAddress?id='+
+      url: '/pages/addAddress/addAddress?id='+
       _this.data.selecBtn,
     })
 },

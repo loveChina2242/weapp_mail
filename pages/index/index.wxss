@@ -18,7 +18,7 @@
 }
 .itemImg{
   width: 700rpx;
-  height: 312rpx;
+  height: 300rpx;
 }
 .locatBody{
   position: absolute;
@@ -136,7 +136,7 @@
   text-align: center;
 }
 .popuBtn{
-  width: 274px;
+  width: 295px;
   margin: auto;
 display: flex;
 justify-content: flex-start;
@@ -154,7 +154,9 @@ flex-wrap: wrap;
 .gotranBtn{
   width: 360rpx;
 }
-
+.popufooter {
+margin-top: 20rpx;
+}
 /* .popuBtn :active{
   background-color: cornflowerblue;
 } */

@@ -1,0 +1,54 @@
+<!--components/copyAddress/copyAddress.wxml-->
+<view class="Copycontainer">
+  <view class="copyAddress">
+    <view class="loacGit flexbox">
+      <image class="iconImg" src="../../assets/images/dizhi.png"></image> <view class="dizhi"> 仓库地址</view>
+    </view>
+    <view class="addressmsg">
+      <view>张三</view>
+      <view class="empty"></view>
+      <view>18900002222 <text class="copyInfo" catchtap="copyInfo">复制</text></view>
+    </view>
+    <view class="addressCity">广东省深圳市龙华观澜街道银星科技大厦</view>
+  </view>
+
+  <view class="copyAddress">
+    <view class="loacGit" style="height: 350px;">
+      目标国收件信息
+      <view class="tip">
+        <view class="tipText">
+          <icon type="warn" size="14"></icon>请用英文填写
+        </view>
+        <navigator open-type="navigate" url="/pages/myAddress/myAddress" class="seleBtn" >选择地址</navigator>
+      </view>
+
+
+      <!-- shuru -->
+      <van-cell-group>
+
+        <van-field value="{{ Info.name }}" bind:input="getValue" type="number" label="Name" 
+    placeholder="Please enter the Name" error-message="{{errmsg}}" />
+
+        <van-field value="{{ Info.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
+    placeholder="Please enter the phone" />
+
+    <van-field value="{{ Info.address }}" type="text" label="Address" 
+    placeholder="Please enter the address" bind:input="getaddress" error-message="{{errmsg3}}" />
+
+    <van-field value="{{ Info.city }}" type="text" label="City" 
+    placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
+
+    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" 
+    placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
+
+  
+
+      </van-cell-group>
+
+    </view>
+  </view>
+
+  <view class="bottomBtn">
+    <button class="Bbtn" bindtap="commitAddress">立即转运</button>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<view class="nodata">
+
+<image mode="aspectFit" class="noAddress" src="../../assets/images/noaddress.png" />
+<text class="nodatatip">亲，暂时没有活动哦~</text>
+</view>

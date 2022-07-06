@@ -1,20 +1,23 @@
 <!--components/orderlist/orderlist.wxml-->
-<view class="orderBox">
+<view class="orderBox"  >
     <view class="title">
       <text>订单号：20220509140712345678</text>
       <text class="copy" catchtap="copyMsg">复制</text>
     </view>
    <view class="orderbody">
     <view class="locaItem flexItem">
-      <view class="itemtext">中国</view>
+      <view class="itemtext">{{listdata.setout}}</view>
       <view class="itemicon">
         <image class="img" src="../../assets/images/sharpicons_airplane.png"></image>
-        <text style="color:#6777d5 ; font-size: 28rpx;">待入仓</text>
+        <text style="color:#6777d5 ; font-size: 28rpx;">{{listdata.text}}</text>
       </view>
-      <view class="itemtext">美国</view>
+      <view class="itemtext">{{listdata.target}}</view>
     </view>
     <view class="orderBtn">
-      <button class="btn btn1" >确认打包</button>
+      <button  wx:if="{{listdata.stauts == 0 }}" class="btn btn1" >待填写</button>
+      <button  wx:if="{{listdata.stauts == 1 }}" class="btn btn1" >待支付</button>
+      <button  wx:if="{{listdata.stauts == 2 }}" class="btn btn1" >确认入仓</button>
+      <button  wx:if="{{listdata.stauts == 3 }}" class="btn btn1" >已完成</button>
       <button class="btn btn2">详情</button>
     </view>
    </view>

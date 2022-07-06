@@ -1,0 +1,107 @@
+<view class="container">
+  <view class="info flexItem">
+    <view class="price">
+      <image class="counp1" src="../../assets/images/coup1.png"></image>
+      <view class="cunptext">
+        <view><text style="font-size: 96rpx;">15</text><text>元</text></view>
+      <view>满100元使用</view>
+      </view>
+      
+    </view>
+    <view class="data">
+      <image class="counp3" src="../../assets/images/counp3.png"></image>
+      <image class="counp4" src="../../assets/images/抵扣券@1x.png"></image>
+      <view class="datatext">
+       <view><text style="font-size: 36rpx;">新品优惠</text></view> 
+       <view style="margin-top: 20rpx;"><text class="datanum">2020.10.10 - 2020.11.11</text></view> 
+      </view>
+    </view>
+  </view>
+  <view class="info flexItem">
+    <view class="price">
+      <image class="counp1" src="../../assets/images/counpd.png"></image>
+      <view class="cunptext">
+        <view><text style="font-size: 96rpx;">15</text><text>元</text></view>
+      <view>满100元使用</view>
+      </view>
+      
+    </view>
+    <view class="data">
+      <image class="counp3" src="../../assets/images/cd.png"></image>
+      <image class="counp4" src="../../assets/images/抵扣券@1x.png"></image>
+      <image class="counp5" src="../../assets/images/deaddata.png"></image>
+      <view class="datatext">
+       <view><text style="font-size: 36rpx;">新品优惠</text></view> 
+       <view style="margin-top: 20rpx;"><text class="datanum">2020.10.10 - 2020.11.11</text></view> 
+      </view>
+    </view>
+  </view>
+  <view class="info flexItem">
+    <view class="price">
+      <image class="counp1" src="../../assets/images/cgray.png"></image>
+      <view class="cunptext">
+        <view><text style="font-size: 96rpx;">88</text><text>折</text></view>
+      <view>满100元使用</view>
+      </view>
+      
+    </view>
+    <view class="data">
+      <image class="counp3" src="../../assets/images/c3.png"></image>
+      <image class="counp4" src="../../assets/images/抵扣券@1x.png"></image>
+      <image class="counp5" src="../../assets/images/c4.png"></image>
+      <view class="datatext">
+       <view><text style="font-size: 36rpx; color: #c4c4c4;">新品优惠</text></view> 
+       <view style="margin-top: 20rpx;"><text class="datanum">2020.10.10 - 2020.11.11</text></view> 
+      </view>
+    </view>
+  </view>
+  <view class="info flexItem">
+    <view class="price">
+      <image class="counp1" src="../../assets/images/cgray.png"></image>
+      <view class="cunptext">
+        <view><text style="font-size: 96rpx;">88</text><text>折</text></view>
+      <view>满100元使用</view>
+      </view>
+      
+    </view>
+    <view class="data">
+      <image class="counp3" src="../../assets/images/c3.png"></image>
+      <image class="counp4" src="../../assets/images/抵扣券@1x.png"></image>
+      <image class="counp5" src="../../assets/images/c4.png"></image>
+      <view class="datatext">
+       <view><text style="font-size: 36rpx; color: #c4c4c4;">新品优惠</text></view> 
+       <view style="margin-top: 20rpx;"><text class="datanum">2020.10.10 - 2020.11.11</text></view> 
+      </view>
+    </view>
+  </view>
+  <view class="info flexItem">
+    <view class="price">
+      <image class="counp1" src="../../assets/images/cgray.png"></image>
+      <view class="cunptext">
+        <view><text style="font-size: 96rpx;">88</text><text>折</text></view>
+      <view>满100元使用</view>
+      </view>
+      
+    </view>
+    <view class="data">
+      <image class="counp3" src="../../assets/images/c3.png"></image>
+      <image class="counp4" src="../../assets/images/抵扣券@1x.png"></image>
+      <image class="counp5" src="../../assets/images/c4.png"></image>
+      <view class="datatext">
+       <view><text style="font-size: 36rpx; color: #c4c4c4;">新品优惠</text></view> 
+       <view style="margin-top: 20rpx;"><text class="datanum">2020.10.10 - 2020.11.11</text></view> 
+      </view>
+    </view>
+  </view>
+  <van-popup   show="{{show}}" bind:close="onClose">
+  <text class="t1">兑换优惠券</text>
+    <input class="ipt" type="text" placeholder="请输入优惠卷code，进行兑换"/>
+    <view class="pbtn">
+    <van-button type="info" plain catchtap="oncanel" >取消</van-button>
+    <van-button   type="primary" plain catchtap="onchange">领取</van-button>
+    </view>
+  </van-popup>
+  <button class="btn" bindtap="showPopup">兑换优惠券</button>
+
+  
+</view>

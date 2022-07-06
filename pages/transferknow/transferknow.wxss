@@ -1,0 +1,16 @@
+/* pages/transferknow/transferknow.wxss */
+page{
+  padding: 40rpx;
+}
+.text{
+  margin-bottom: 100rpx;
+  font-size: 36rpx;
+
+}
+.btn{
+
+  width: 250rpx;
+  margin: auto;
+  color: white;
+  font-size: 28rpx;
+}

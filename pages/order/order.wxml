@@ -1,10 +1,17 @@
 <!--pages/order/order.wxml-->
-<van-tabs sticky color="#4fc09a">
+<!-- active="{{ active }}" -->
+<van-tabs sticky color="#4fc09a" >
   <van-tab title="全部">
-    <orderlist></orderlist>
+    <orderlist  wx:for="{{listdata}}"  listdata="{{item}}" wx:key="unique"> </orderlist>
   </van-tab>
 
-  <van-tab title="待支付">内容 2</van-tab>
-  <van-tab title="已支付">内容 3</van-tab>
-  <van-tab title="已完成">内容 4</van-tab>
+  <van-tab title="待支付">
+    <orderlist  wx:for="{{listdata1}}"  wx:key="unique"  listdata="{{item}}"> </orderlist>
+  </van-tab>
+  <van-tab title="已支付">
+    <orderlist wx:for="{{listdata2}}"  wx:key="unique" listdata="{{item}}"></orderlist>
+  </van-tab>
+  <van-tab title="已完成">
+    <orderlist wx:for="{{listdata3}}"  wx:key="unique" listdata="{{item}}"></orderlist>
+  </van-tab>
 </van-tabs>

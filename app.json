@@ -1,54 +1,61 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/logs/logs",
     "pages/coupon/coupon",
     "pages/order/order",
     "pages/user/user",
-    "components/copyAddress/copyAddress",
-    "components/addAddress/addAddress",
-    "components/myAddress/myAddress",
-    "components/newAddress/newAddress",
-    "components/cotsEstimate/cotsEstimate",
+    "pages/copyAddress/copyAddress",
+    "pages/orderdetail/orderdetail",
+    "pages/transferknow/transferknow",
+    "pages/transferprocess/transferprocess",
+    "pages/countrysearch/countrysearch",
+    "pages/myAddress/myAddress",
+    "pages/addAddress/addAddress",
+    "pages/getcoupons/getcoupons",
+    "pages/insureval/insureval",
+    "pages/changecoup/changecoup",
+    "pages/activecenter/activecenter",
+    "pages/cotsEstimate/cotsEstimate",
+    "pages/newAddress/newAddress",
     "components/orderlist/orderlist",
-    "components/transferknow/transferknow",
-    "components/countrysearch/countrysearch",
-    "components/orderdetail/orderdetail"
+    "pages/paydetail/paydetail"
+   
   ],
   "tabBar": {
-
     "selectedColor": "#4189c5",
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "./assets/images/主页.png",
-      "selectedIconPath": "./assets/images/主页 (1).png"
-    }, {
-      "pagePath": "pages/coupon/coupon",
-      "text": "优惠券",
-      "iconPath": "./assets/images/优惠券.png",
-      "selectedIconPath": "./assets/images/优惠券 (1).png"
-    }, {
-      "pagePath": "pages/order/order",
-      "text": "订单信息",
-      "iconPath": "./assets/images/订单.png",
-      "selectedIconPath": "./assets/images/订单 (1).png"
-    } , {
-      "pagePath": "pages/user/user",
-      "text": "我的",
-      "iconPath": "./assets/images/个人.png",
-      "selectedIconPath": "./assets/images/个人 (1).png"
-    }
-    
-  ]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./assets/images/主页.png",
+        "selectedIconPath": "./assets/images/主页 (1).png"
+      },
+      {
+        "pagePath": "pages/coupon/coupon",
+        "text": "优惠券",
+        "iconPath": "./assets/images/优惠券.png",
+        "selectedIconPath": "./assets/images/优惠券 (1).png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单信息",
+        "iconPath": "./assets/images/订单.png",
+        "selectedIconPath": "./assets/images/订单 (1).png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "./assets/images/个人.png",
+        "selectedIconPath": "./assets/images/个人 (1).png"
+      }
+    ]
   },
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
-    
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
-
 }
