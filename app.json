@@ -19,7 +19,10 @@
     "pages/cotsEstimate/cotsEstimate",
     "pages/newAddress/newAddress",
     "components/orderlist/orderlist",
-    "pages/paydetail/paydetail"
+    "pages/paydetail/paydetail",
+    "pages/packagelist/packagelist",
+    "components/createorderNum/createorderNum",
+    "components/areainfo/areainfo"
    
   ],
   "tabBar": {

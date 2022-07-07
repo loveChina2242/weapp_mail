@@ -6,20 +6,29 @@
 
     <view class="countBtn">
       <view class="btnInfo info1" bindtap="seletype">
-      <view class="btnText">转运渠道 普通货物</view> 
+        <view class="btnText">转运渠道 普通货物</view>
       </view>
       <van-popup show="{{ show }}" close-on-click-overlay bind:close="onClose">
-        <van-radio-group value="{{ radio }}"  bind:change="onChangeradio">
-            <van-radio name="1">普通货物</van-radio>
-            <van-radio name="2">电子产品</van-radio>
-            <van-radio name="3">液体粉末</van-radio>
-            <van-radio name="4">内地ESM</van-radio>
-            <van-radio name="5">广东ESM</van-radio>
+        <van-radio-group value="{{ radio }}" bind:change="onChangeradio">
+          <van-radio name="1">普通货物</van-radio>
+          <van-radio name="2">电子产品</van-radio>
+          <van-radio name="3">液体粉末</van-radio>
+          <van-radio name="4">内地ESM</van-radio>
+          <van-radio name="5">广东ESM</van-radio>
         </van-radio-group>
       </van-popup>
-      <view class="btnInfo info2">
-      <view class="btnText">预估重量 请输入重量</view> 
+      <view class="btnInfo info2 "  catchtap="seletkg">
+        <view class="btnText" >预估重量 请输入重量</view>
       </view>
+      <van-popup show="{{tijishow}}" close-on-click-overlay bind:close="onClose2" width="600rpx">
+        <van-cell-group >
+          <van-field value="{{ kg }}"  label="重量（KG）"   bind:click-icon="onClickIcon" />
+          <van-field value="{{ length }}" type="number" label="长（CM）" />
+          <van-field value="{{ weight }}" type="number" label="宽（CM）" />
+          <van-field value="{{ height }}" type="number" label="高(cm)" />
+        </van-cell-group>
+      </van-popup>
+
     </view>
 
     <view class="volume volume1">
@@ -30,5 +39,5 @@
       <view class="volumeText">预估运费（实际结果以订单为准）</view>
       <view class="volumeText">¥ 0.00</view>
     </view>
-  </view> 
+  </view>
 </view>

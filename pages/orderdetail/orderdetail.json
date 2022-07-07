@@ -1,6 +1,9 @@
 {
   "usingComponents": {
     "van-icon": "../../miniprogram/miniprogram_npm/@vant/weapp/icon/index",
-    "van-field": "../../miniprogram/miniprogram_npm/@vant/weapp/field/index"
+    "van-field": "../../miniprogram/miniprogram_npm/@vant/weapp/field/index",
+    "mailorder":"../../components/createorderNum/createorderNum"
+ 
+
   }
 }

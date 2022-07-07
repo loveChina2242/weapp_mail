@@ -19,12 +19,33 @@
         <view class="tipText">
           <icon type="warn" size="14"></icon>请用英文填写
         </view>
-        <navigator open-type="navigate" url="/pages/myAddress/myAddress" class="seleBtn" >选择地址</navigator>
+        <view catchtap="goseleted" class="seleBtn" >选择地址</view>
       </view>
 
 
       <!-- shuru -->
-      <van-cell-group>
+      <van-cell-group wx:if="{{selectarea}}">
+
+        <van-field value="{{ selectarea.username }}" bind:input="getValue" type="number" label="Name" 
+    placeholder="Please enter the Name" error-message="{{errmsg}}" />
+
+        <van-field value="{{ selectarea.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
+    placeholder="Please enter the phone" />
+
+    <van-field value="{{ selectarea.address }}" type="text" label="Address" 
+    placeholder="Please enter the address" bind:input="getaddress" error-message="{{errmsg3}}" />
+
+    <van-field value="{{ selectarea.city }}" type="text" label="City" 
+    placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
+
+    <van-field value="{{ selectarea.postcode }}" type="text" label="PostCode" 
+    placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
+
+      </van-cell-group>
+
+
+
+      <van-cell-group wx:else>
 
         <van-field value="{{ Info.name }}" bind:input="getValue" type="number" label="Name" 
     placeholder="Please enter the Name" error-message="{{errmsg}}" />

@@ -1,0 +1,29 @@
+<view class="msgbox">
+    <view class="shouhuo">
+      <image class="icon" src="../../assets/images/dizhi.png"></image>
+      <view class="msg">
+        <view class="name">
+          <text>信息网仓库</text>
+          <text class="empty"></text>
+          <text>1900000888</text>
+          <text class="empty"></text>
+          <text class="copy">复制</text>
+        </view>
+        <view class="areadetail">深圳市龙华区龙华街道工业路壹城环智中心C座2607室</view>
+      </view>
+    </view>
+    <view class="shouhuo">
+      <image class="icon" src="../../assets/images/mudedi.png"></image>
+      <view class="msg">
+        <view class="name">
+          <text>zhangsan</text>
+          <text class="empty"></text>
+          <text>18339393933</text>
+
+        </view>
+        <view class="areadetail">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A
+          TUCSON, AZ 85705 USA</view>
+      </view>
+    </view>
+  </view>
+

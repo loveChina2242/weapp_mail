@@ -1,0 +1,27 @@
+<view class="container">
+<view class="head">
+  <view class="box">
+  <text>  
+  全部包裹
+  查看您的全部包裹</text>
+  </view>
+  <view class="box">
+   <text> 
+   退回包裹
+    退回给商家或仓库处理</text>
+  </view>
+  <view class="box">
+  <text> 
+   异常包裹
+    违禁品</text>
+  </view>
+  <view class="box">
+   <text> 
+   入库包裹
+    已入库的包裹</text>
+  </view>
+</view>
+
+<van-steps steps="{{ steps }}" direction="vertical" active="{{ active }}" />
+
+</view>

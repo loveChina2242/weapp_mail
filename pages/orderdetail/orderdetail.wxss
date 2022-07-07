@@ -163,9 +163,9 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  position: fixed;
-  bottom: 0;
+ 
 }
+
 
 .footerbtn {
   width: 50%;
@@ -173,12 +173,17 @@
   line-height: 100rpx;
   color: white;
   font-size: 28rpx;
+  text-align: center;
 }
 
 .btncolor1 {
   background-color: rgb(47, 96, 201);
+
 }
 
 .btncolor2 {
   background-color: rgb(90, 207, 61);
 }
+
+
+

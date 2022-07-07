@@ -1,8 +1,11 @@
 {
+  "navigationBarBackgroundColor": "#e28235",
   "usingComponents": {
     "van-cell": "../../miniprogram/miniprogram_npm/@vant/weapp/cell/index",
   "van-cell-group": "../../miniprogram/miniprogram_npm/@vant/weapp/cell-group/index",
-  "van-checkbox": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox/index"
+  "van-checkbox": "../../miniprogram/miniprogram_npm/@vant/weapp/checkbox/index",
+  "van-submit-bar": "../../miniprogram/miniprogram_npm/@vant/weapp/submit-bar/index",
+  "van-popup": "../../miniprogram/miniprogram_npm/@vant/weapp/popup/index"
 
   }
 }

@@ -3,11 +3,17 @@ Page({
   data: {
     msg: "",
     disabled: true,
-    nextTime: 0
+    nextTime: 0,
+    checked:false
   },
-
+  onChange(e){
+    this.setData({
+      checked: e.detail,
+    });
+    console.log(this.data.checked);
+    
+  },
   onShow() {
-
       let num = 5
       let _this = this;
       _this.setData({
@@ -20,7 +26,7 @@ Page({
           clearInterval(timer)
           _this.setData({
             disabled:false,
-            msg:'我已悉知'
+            msg:'我已悉知',
           })
         
         }else{
@@ -33,6 +39,13 @@ Page({
 
   },
   nextStepTap(){
+    if(!this.data.checked){
+      wx.showToast({
+        title: '请勾选',
+        icon:'none'
+      })
+      return
+    }
     wx.navigateTo({
       url: '/pages/orderdetail/orderdetail',
     })

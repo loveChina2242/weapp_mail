@@ -1,0 +1,30 @@
+
+<view class="mailbox">
+	<view class="tips"><view class="icon"><image class="iconimg" src="../../assets/images/tip.png"></image></view>
+		<text>快递全部到齐点击确认打包后，订单不可修改</text></view>
+	<view class="mailnum">
+		<text class="tiptext" >*</text>
+		<text class="tiptext2">快递个数</text>
+		<view>
+			<input class="weui-input" maxlength="1" disabled="{{disabled}}" value="{{numval ? numval :''}}"
+       bindinput="bindinput" bindblur="onblur" placeholder="请输入个数 "/>
+		</view>
+	</view>
+	<textarea class="liuyan" placeholder="备注信息，例如：去掉包装盒等" />
+
+
+	<block wx:if="{{numval > 0}}">
+		<view style="position: relative;">
+		<view wx:for="{{orderList}}" wx:key="id" class="inpbox">
+			<view class="filee">
+				<text style="line-height: 66rpx;">{{index+1}}.</text>
+				<input class="inpitem" type="number" data-items="{{item}}" disabled="{{item.disabled}}" value="{{item.mail}}" bindchange="iptchange"   />
+				<van-icon class="deleteClick" size="24px" color="#c1c1c1" data-info="{{index}}" name="delete-o" catchtap="deleinfo" />
+			</view>
+		</view>
+		<view class="buchong" catchtap="onadd">补充快递单号</view>
+	</view>
+	</block>
+
+	<view></view>
+</view>

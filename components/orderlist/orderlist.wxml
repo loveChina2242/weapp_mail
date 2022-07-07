@@ -13,11 +13,30 @@
       </view>
       <view class="itemtext">{{listdata.target}}</view>
     </view>
-    <view class="orderBtn">
-      <button  wx:if="{{listdata.stauts == 0 }}" class="btn btn1" >待填写</button>
-      <button  wx:if="{{listdata.stauts == 1 }}" class="btn btn1" >待支付</button>
-      <button  wx:if="{{listdata.stauts == 2 }}" class="btn btn1" >确认入仓</button>
-      <button  wx:if="{{listdata.stauts == 3 }}" class="btn btn1" >已完成</button>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 0 }}">
+      <button  class="btn btn1" >待支付</button>
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 1 }}">
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 2 }}">
+      <!-- <button  class="btn btn1" >待支付</button> -->
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 3 }}">
+      <!-- <button  wx:if="{{listdata.stauts == 1 }}" class="btn btn1" >待支付</button> -->
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 4 }}">
+      <!-- <button  class="btn btn1" >待支付</button> -->
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 5 }}">
+      <!-- <button  class="btn btn1" >物流详情</button> -->
+      <button class="btn btn2">详情</button>
+    </view>
+    <view class="orderBtn" wx:if="{{listdata.stauts == 6 }}">
       <button class="btn btn2">详情</button>
     </view>
    </view>
