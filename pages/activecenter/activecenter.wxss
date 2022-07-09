@@ -3,5 +3,7 @@
   text-align: center;
 }
 .nodatatip{
+  width: 100%;
   color: #686868;
+   margin: auto;
 }

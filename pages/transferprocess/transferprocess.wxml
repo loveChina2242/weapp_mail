@@ -11,6 +11,13 @@
 第四步:收到货品及时查验后再进行签收，签收完成后表示订单已完成;
                                2020-11-02 23:46:48
   </text>
-  <button class="btn" style="{{disabled?'':'background-color: cornflowerblue'}}" bindtap="nextStepTap" disabled="{{disabled}}"> {{msg}}</button>
+  <view class="footer" wx:if="{{status == 0}}">
+    <button class="btn" style="{{disabled?'background-color: cornflowerblue':''}}" bindtap="knowsee"> 我已悉知
+  </button>
+</view>
+<view wx:else class="footer">
+  <button class="btn" style="{{disabled?'':'background-color: cornflowerblue'}}" 
+  bindtap="nextStepTap" disabled="{{disabled}}"> {{msg}}</button>
+</view>
 
 </view>

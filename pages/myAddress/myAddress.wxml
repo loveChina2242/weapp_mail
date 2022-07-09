@@ -1,28 +1,30 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+
 <view>
   <van-cell-group>
     <!--有地址-->
     <block wx:if="{{userinfos && userinfos.length>0}}">
-      <van-radio-group value="{{ radio }}" bind:change="onChange">
-        <view class="addressInfo" wx:for="{{userinfos}}" wx:key="index">
+      <van-radio-group value="{{ radio }}" bind:change="onChange" >
+        <view class="addressInfo" wx:for="{{userinfos}}" wx:key="index" >
           <van-cell-group>
-            <view class="updeBtn" catchtap="seletedarea" data-msg="{{item}}">
+            <view class="updeBtn" catchtap="seletedarea">
               <view class="user">
-                <!-- {{item.username}}.substring(0,1) -->
-                {{item.username}}.split('',1)
+                <!-- {{item.name}}.substring(0,1) -->
+                {{tools.portrait(item.name)}}
               </view>
               <view class="userMsg">
                 <view class="userInfo">
-                  <text>{{item.username}}</text>
+                  <text>{{item.name}}</text>
                   <text style="width: 50rpx;"></text>
                   <text>{{item.phone}}</text>
                 </view>
                 <view class="userInfo">
-                  <text style="color: rgb(102, 102, 102);font-size: 12px">{{item.address}}</text>
+                  <text style="color: rgb(102, 102, 102);font-size: 12px">{{item.address}}{{item.city}}</text>
                 </view>
               </view>
             </view>
             <view class="userInfo updeBtn">
-              <van-radio checked-color="#e7691d" name="{{item.id}}" bind:click="onClick">
+              <van-radio checked-color="#e7691d" name="{{item.checked}}" value="{{index}}" data-id="index" >
                 <text style="color: #e76918; font-size: 12px;"> 默认寄件地址</text>
               </van-radio>
               <view>
@@ -31,11 +33,8 @@
               </view>
             </view>
           </van-cell-group>
-
         </view>
       </van-radio-group>
-
-
     </block>
 
     <!--地址为空-->

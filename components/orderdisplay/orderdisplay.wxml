@@ -1,0 +1,40 @@
+<view class="msgbox">
+  <view class="shouhuo">
+    <view class="text">运费：¥ 138.00</view>
+    <view class="text">附加费：¥ 0.00</view>
+    <view class="text">称重重量：5.6 kg</view>
+    <view class="text">分拣备注：<text class="tip"> 已拆封分拣，统一归类</text></view>
+    <view class="text ">打包备注：<text class="tip">东西太多，已统一打包加固</text> </view>
+    <view class="text">称重图片：</view>
+    <view class="weighimg" >
+      <image catchtap="lookpic" wx:key="index" wx:for="{{orderpic}}" data-item='{{item.url}}' class="imgitem" src="{{item.url}}"></image>
+      <!-- <image class="imgitem" src="../../assets/images/oder.png"></image>
+      <image class="imgitem" src="../../assets/images/oder.png"></image> -->
+    </view>
+    <view class="text">账单</view>
+    <view class="orderlist">
+      <view class="orderitem flexitem">
+        <image class="imgitem2" src="../../assets/images/oder.png"></image>
+        <view class="ordertext">
+          <view class="text2 textbig">包裹一</view>
+          <view class="text2">属性：普通货物</view>
+          <view class="text2">长宽高：12*5*5 CM</view>
+          <view class="text2">计费重量：1.25KG</view>
+          <view class="text2">计费方式：实际重量</view>
+          <view class="text2">运费：￥125</view>
+        </view>
+      </view>
+      <view class="orderitem flexitem">
+        <image class="imgitem2" src="../../assets/images/oder.png"></image>
+        <view class="ordertext">
+          <view class="text2 textbig">包裹一</view>
+          <view class="text2">属性：普通货物</view>
+          <view class="text2">长宽高：12*5*5 CM</view>
+          <view class="text2">计费重量：1.25KG</view>
+          <view class="text2">计费方式：实际重量</view>
+          <view class="text2">运费：￥125</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

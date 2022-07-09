@@ -1,0 +1,31 @@
+<areainfo></areainfo>
+<orderdisplay></orderdisplay>
+<createorderNum></createorderNum>
+
+<view class="msgbox footer">
+    <view class="bottomorder">
+      <text>订单号：20220509140712345678</text>
+      <text class="copy">复制</text>
+    </view>
+
+    <view class="bottomorder">
+      <text>转运线路：中国 - 美国</text>
+    </view>
+    <view class="bottomorder">
+      <text>预选渠道：普通货物</text>
+    </view>
+    <view class="bottomorder">
+      <text>订单状态：<text style="color: #ffd75a;">待填写</text> </text>
+    </view>
+    <view class="bottomorder">
+      <text>下单时间：2022-05-09 14:07:12</text>
+    </view>
+
+  </view>
+
+  <view style="height: 200rpx;"></view>
+  <view class="bottom">
+    <van-button class="footerbtn btncolor1">联系客服</van-button>
+    <van-button class="footerbtn btncolor2" catchtap="payselet">支付选项</van-button>
+  </view>
+

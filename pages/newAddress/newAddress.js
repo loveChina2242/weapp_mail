@@ -6,12 +6,12 @@ Page({
   data: {
     show: false, //弹出层
     areaList,
+    newarea:[],
     areaData: [],
-    checked: true,
-    
+    checked: false,
     Info: {
       name: '',
-      phone:'',
+      phone: '',
       address: '',
       city: '',
       postcode: '',
@@ -23,14 +23,7 @@ Page({
     errmsg4: '',
     errmsg5: '',
     errmsg6: '',
-    // Info:[
-    //   {id:1,title:"Name",value:'',plaText:'Please enter the username'},
-    //   {id:2,title:"phone",value:'',plaText:'Please enter the phone'},
-    //   {id:3,title:"address",value:'',plaText:'Please enter the address'},
-    //   {id:4,title:"city",value:'',plaText:'Please enter the city'},
-    //   {id:5,title:"postcode",value:'',plaText:'Please enter the postcode'},
-    //   {id:6,title:"country",value:'',plaText:'Please enter the country'}
-    // ]
+
   },
 
   showPopup() {
@@ -52,7 +45,6 @@ Page({
     });
   },
 
-  //
   confirm(res, index) {
     let data = res.detail.values
     let area = `${data[0].name}/${data[1].name}/${data[2].name}`
@@ -63,8 +55,8 @@ Page({
     })
   },
 
-  onChange({detail }) {
-    // 需要手动对 checked 状态进行更新
+  onChange({detail}) {
+    // 默认
     this.setData({
       checked: detail
     });
@@ -72,27 +64,28 @@ Page({
   },
   // 提交
   commitAddress() {
-    if(Object.values(this.data.Info)){
-      console.log(Object.values(this.data.Info));
-    let temp =   Object.values(this.data.Info).every((item,index)=>{
+    if (Object.values(this.data.Info)) {
+      let temp = Object.values(this.data.Info).every((item, index) => {
         return item !== ''
       })
-      if(!temp){
+      if (!temp) {
         wx.showToast({
           title: '请填写完整信息哦~',
-          icon:'none'
+          icon: 'none'
         })
-        return 
-      }else{
-     
-        // wx.setStorageSync('address', )
-        // 跳转
-        // let arr  = getApp()
-        // arr.data.newAddressData = `${Object.values(this.data.Info)}`+","+`${this.data.checked}`
-        // console.log(arr.data.newAddressData);
+        return
+      } else {
+        let info= this.data.Info 
+        let obj = {checked:this.data.checked}
+        let newobj = Object.assign(info,obj)//向数据追加属性
+        let olddata = wx.getStorageSync('newarea')
+        newobj=[...olddata,newobj],//防止覆盖
+        wx.setStorageSync('newarea', newobj)
+        wx.navigateBack({
+          delta: 1
+        })
       }
     }
-  console.log(Object.values(this.data.Info));  
 
   },
   // 获取输入框
@@ -110,7 +103,7 @@ Page({
       } else {
         _this.setData({
           errmsg: "",
-          'Info.name':name
+          'Info.name': name
         })
       }
     } else {
@@ -122,7 +115,7 @@ Page({
   // phone
   getPhone(e) {
     let phone = e.detail
-    console.log("phone", phone);
+    // console.log("phone", phone);
     let _this = this;
     let Reg = /^1[3-9][0-9]{9}$/; //数字
     if (phone) {
@@ -134,7 +127,7 @@ Page({
       } else {
         _this.setData({
           errmsg2: "",
-          'Info.phone':phone
+          'Info.phone': phone
         })
       }
     } else {
@@ -143,24 +136,23 @@ Page({
       })
     }
   },
-
   // dizhi
-  getaddress(e){
+  getaddress(e) {
     let name = e.detail
-    console.log(name);
+    // console.log(name);
     let _this = this;
     let Reg = /^[a-zA-Z]/; //匹配拼音及英文
     if (name) {
       if (!Reg.test(name)) {
         _this.setData({
           errmsg3: "请输入正确格式",
-          
+
         })
         return
       } else {
         _this.setData({
           errmsg3: "",
-          "Info.address":name
+          "Info.address": name
         })
       }
     } else {
@@ -169,22 +161,22 @@ Page({
       })
     }
   },
-  getcity(e){
+  getcity(e) {
     let city = e.detail
-    console.log(city);
+    // console.log(city);
     let _this = this;
     let Reg = /^[a-zA-Z]/; //匹配拼音及英文
     if (city) {
       if (!Reg.test(city)) {
         _this.setData({
           errmsg4: "请输入正确格式",
-         
+
         })
         return
       } else {
         _this.setData({
           errmsg4: "",
-          "Info.city":city
+          "Info.city": city
         })
       }
     } else {
@@ -193,22 +185,21 @@ Page({
       })
     }
   },
-  getcode(e){
+  getcode(e) {
     let postcode = e.detail
-    console.log(postcode);
     let _this = this;
     let Reg = /^[1-9]\d{5}$/g; //匹配拼音及英文
     if (postcode) {
       if (!Reg.test(postcode)) {
         _this.setData({
           errmsg5: "请输入正确格式",
-      
+
         })
         return
       } else {
         _this.setData({
           errmsg5: "",
-          "Info.postcode":postcode
+          "Info.postcode": postcode
         })
       }
     } else {
@@ -217,22 +208,22 @@ Page({
       })
     }
   },
-  getcountry(e){
+  getcountry(e) {
     let country = e.detail
-    console.log(country);
+    // console.log(country);
     let _this = this;
     let Reg = /^[a-zA-Z]/; //匹配拼音及英文
     if (country) {
       if (!Reg.test(country)) {
         _this.setData({
           errmsg6: "请输入正确格式",
-         
+
         })
         return
       } else {
         _this.setData({
           errmsg6: "",
-          "Info.country":country
+          "Info.country": country
         })
       }
     } else {

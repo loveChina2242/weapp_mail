@@ -3,3 +3,5 @@
 <navigator class="youhui"  open-type="navigate" url="/pages/getcoupons/getcoupons">
   <image wx:for="{{img}}" wx:key="{{item.id}}" class ="img" src="{{item.url}}"></image>
 </navigator>
+
+

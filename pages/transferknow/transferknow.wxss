@@ -5,12 +5,18 @@ page{
 .text{
   margin-bottom: 100rpx;
   font-size: 36rpx;
-
 }
 .btn{
-
   width: 250rpx;
   margin: auto;
-  color: white;
+  color: rgb(0, 46, 107);
   font-size: 28rpx;
+}
+.van-checkbox{
+  margin: 43rpx 121rpx;
+}
+
+.btncolor{
+  color: black;
+  background-color: cornflowerblue;
 }

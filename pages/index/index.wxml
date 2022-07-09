@@ -4,7 +4,7 @@
     <block wx:for="{{swiperImg}}" wx:key="*this">
       <swiper-item>
         <view class="swiper-item">
-          <image class="itemImg" src="{{item.img}}"></image>
+          <image class="itemImg"  src="{{item.img}}"></image>
         </view>
       </swiper-item>
     </block>
@@ -21,7 +21,7 @@
     <button class="tranBtn gotranBtn"  bindtap="goTransfer">立即转运</button>
     <van-popup show="{{show}}" bind:close="onClose">
       <view class="popupBox">
-        <text class="popuptext">预选渠道</text>
+        <view class="popuptext">预选渠道</view>
         <view class="popuBtn">
           <vant-button wx:for="{{btnMsg}}" wx:key="*this" 
           class="popubtnItem " catchtap="selecBtn" 
@@ -32,8 +32,8 @@
         </view>
       </view>
       <view class="popufooter flexItem">
-        <button bindtap="closeSelect">取消</button>
-        <button bindtap="goAddress">下一步</button>
+        <van-button bindtap="closeSelect">取消</van-button>
+        <van-button bindtap="goAddress">下一步</van-button>
       </view>
     </van-popup>
   </view>
@@ -54,7 +54,7 @@
 </view>
 <!-- zhuyi -->
 <view class="flexItem mailDetail">
-  <navigator class="detailItem item1" url="/pages/transferknow/transferknow">
+  <navigator class="detailItem item1" url="/pages/transferknow/transferknow?status=0">
     <view class="itemtext">转运须知</view>
     <view >流程和注意事项</view>
     <view class="flexItem detailIcon">

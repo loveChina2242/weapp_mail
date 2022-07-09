@@ -26,7 +26,7 @@
       <!-- shuru -->
       <van-cell-group wx:if="{{selectarea}}">
 
-        <van-field value="{{ selectarea.username }}" bind:input="getValue" type="number" label="Name" 
+        <van-field value="{{ selectarea.username }}" bind:input="getValue" type="text" label="Name" 
     placeholder="Please enter the Name" error-message="{{errmsg}}" />
 
         <van-field value="{{ selectarea.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
@@ -38,7 +38,7 @@
     <van-field value="{{ selectarea.city }}" type="text" label="City" 
     placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
 
-    <van-field value="{{ selectarea.postcode }}" type="text" label="PostCode" 
+    <van-field value="{{ selectarea.postcode }}" type="number" label="PostCode" 
     placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
 
       </van-cell-group>

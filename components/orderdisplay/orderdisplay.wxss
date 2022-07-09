@@ -1,0 +1,62 @@
+
+
+.msgbox {
+  width: 693rpx;
+  line-height: 40rpx;
+  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 79);
+  color: rgba(16, 16, 16, 100);
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx 0px rgba(0, 0, 0, 0.4);
+  margin: 10px auto;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+
+.shouhuo {
+  text-align: start;
+  font-size: 28rpx;
+  margin: 40rpx 10rpx;
+}
+.text{
+  margin: 10rpx;
+}
+.imgitem{
+  width: 192rpx;
+  height: 164rpx;
+  margin: 16rpx;
+}
+.imgitem2{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 16rpx;
+}
+.tip{
+  color: rgb(252, 145, 45);
+}
+.orderitem{
+width: 638rpx;
+height: 220rpx;
+border: 1px solid rgb(148, 148, 148);
+margin-bottom: 20rpx;
+padding: 10rpx;
+}
+.flexitem{
+  display: flex;
+  justify-content: flex-start;
+}
+.ordertext{
+  width: 400rpx;
+  height: 220rpx;
+  
+  text-align: start;
+  font-size: 28rpx;
+  margin-left: 20rpx;
+}
+.text2{
+  margin-left: 20rpx;
+  height: 18px;
+  font-size: 22rpx;
+}
+.textbig{
+  font-size: 28rpx;
+}

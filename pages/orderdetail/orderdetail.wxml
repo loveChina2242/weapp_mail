@@ -32,39 +32,9 @@
 
 
 
-<view >
-  <mailorder></mailorder>
-</view>
-
-
-
-  <!-- <view class="msgbox mailbody">
-    <view class="title">
-      <image class="tipicon" src="../../assets/images/tip.png"></image>
-      <text class="tip">快递全部到齐点击确认打包后，订单不可修改</text>
-    </view>
-    <view class="mailbox">
-      <van-field value="{{ numvalue }}" type="number" bind:blur="onblur" disabled="{{disabled}}" error-message="{{errmsg}}" label="快递个数" type="number" placeholder="请输入（输入后弹出快递单号位置 " border="false" />
-
-    </view>
-    <view class="remark">
-      <textarea class="textarea" name="备注信息" id="" cols="20" rows="10" placeholder="备注信息，例如：去掉包装盒等"></textarea>
-    </view>
-
-
-    <view class="mailipt" wx:if="{{show}}">
-      <van-cell-group class="mailInput" wx:for="{{numvalue}}" wx:key="index" data-id="{{index}}">
-        <view class="num">{{index+1}}</view>
-        <van-field style="width:300px" value="{{value}}" type="number" border placeholder="123456789" catch:blur="onblueorder" data-order="{{index}}">
-          <van-button class="msgbtn" data-id="{{index}}" catchtap="deleteinfo" slot="button" size="small" type="primary">
-            <van-icon name="delete-o" size='15' />
-          </van-button>
-        </van-field>
-      </van-cell-group>
-      <button class="addbtn" catchtap="addinfo">＋ 补充快递单号</button>
-    </view>
-  </view> -->
-
+  <view>
+    <mailorder></mailorder>
+  </view>
   <view class="msgbox footer">
     <view class="bottomorder">
       <text>订单号：20220509140712345678</text>

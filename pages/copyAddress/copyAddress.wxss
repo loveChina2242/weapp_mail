@@ -1,5 +1,3 @@
-/* components/copyAddress/copyAddress.wxss */
-
 
 .Copycontainer{
   padding:20px 10px 10px;
@@ -20,8 +18,8 @@
   display: flex;
   justify-content: flex-start;
 }
-.dizhi{
-  margin: 16rpx 16rpx;
+.loacGit  .dizhi{
+  margin: 14rpx 16rpx;
   font-size: 40rpx;
 }
 .copyMsg{
@@ -46,7 +44,17 @@
   text-align: center;
 }
 .copyAddress view{
-  margin: 10px 20px;
+  margin: 6rpx;
   text-align:left;
   font-size: 16px;
+}
+.flexitem{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.user{
+  width: 200rpx;
+  text-align: right;
+  font-weight: 600;
 }

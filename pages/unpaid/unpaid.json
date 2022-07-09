@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "areainfo":"../../components/areainfo/areainfo",
+    "orderdisplay":"../../components/orderdisplay/orderdisplay",
+    "createorderNum":"../../components/createorderNum/createorderNum"
+  }
+}

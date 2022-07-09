@@ -1,0 +1,55 @@
+.msgbox {
+  width: 693rpx;
+  line-height: 40rpx;
+  opacity: 0.85;
+  background-color: rgba(255, 255, 255, 79);
+  color: rgba(16, 16, 16, 100);
+  text-align: center;
+  box-shadow: 0 4rpx 20rpx 0px rgba(0, 0, 0, 0.4);
+  margin: 10px auto;
+  border: 1px solid rgba(255, 255, 255, 100);
+}
+
+.footerbtn {
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  color: white;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.btncolor1 {
+  background-color: rgb(47, 96, 201);
+
+}
+
+.btncolor2 {
+  background-color: rgb(90, 207, 61);
+}
+
+
+.bottomorder {
+  padding: 10rpx 20rpx;
+  height: 40rpx;
+  font-size: 26rpx;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.copy {
+  border-radius: 4px;
+  background-color: rgba(217, 241, 221, 100);
+  color: rgba(64, 184, 80, 100);
+  font-size: 20rpx;
+  text-align: center;
+  border: 1px solid rgba(217, 241, 221, 100);
+}
+
+.bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+}

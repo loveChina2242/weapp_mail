@@ -1,14 +1,14 @@
 Page({
+  // 接受数据
   onShow() {
     let pages = getCurrentPages();
     let currPages = pages[pages.length - 1] //当前页面
-    console.log('接收自提地址', currPages.data.selectarea)
     if (currPages.data.selectarea) {
       this.setData({
-        selectarea: currPages.data.selectarea
+        selectarea: currPages.data.selectarea,
+        Info: currPages.data.selectarea
       })
     }
-
   },
   data: {
     addressInfo: {
@@ -41,7 +41,7 @@ Page({
   // 提交
   commitAddress() {
     console.log(this.data.Info);
-    if (Object.values(this.data.Info)) {
+    if (Object.values( this.data.Info)) {
       let temp = Object.values(this.data.Info).every((item, index) => {
         return item !== ''
       })

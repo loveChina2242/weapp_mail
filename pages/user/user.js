@@ -16,8 +16,8 @@ Page({
       {id:2,title:"我的优惠券",url:'/pages/coupon/coupon',urlType:'switchTab'},
       {id:3,title:"活动中心",url:'/pages/activecenter/activecenter',urlType:'navigateTo'},
       {id:4,title:"联系客服",url:'',urlType:'navigateTo'},
-      {id:5,title:"转运流程",url:'/pages/transferprocess/transferprocess',urlType:'navigateTo'},
-      {id:6,title:"转运须知",url:'/pages/transferknow/transferknow',urlType:'navigateTo'},
+      {id:5,title:"转运流程",url:'/pages/transferprocess/transferprocess?status=0',urlType:'navigateTo'},
+      {id:6,title:"转运须知",url:'/pages/transferknow/transferknow?status=0',urlType:'navigateTo'},
       {id:7,title:"关于我们",url:'',urlType:'navigateTo'},
     ]
   },

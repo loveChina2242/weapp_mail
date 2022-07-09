@@ -1,6 +1,6 @@
 <view class='container'>
   <view class='header'>
-    <!-- <open-data type="userAvatarUrl" class='avatar'></open-data> -->
+    <open-data type="userAvatarUrl" class='avatar'></open-data>
     <open-data type="userNickName" class='name'></open-data>
     <text class="name">编码：HHH</text>
   </view>
@@ -13,18 +13,6 @@
           <view>{{item.title}}</view>
         </navigator>
      
-        <!-- <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
-          <image src='/assets/images/fahuo.png'></image>
-          <view>待发货</view>
-        </navigator>
-        <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
-          <image src='/assets/images/shouhuo.png'></image>
-          <view>待收货</view>
-        </navigator>
-        <navigator class='order-item' url='/pages/collect/collect' hover-class='none'>
-          <image src='/assets/images/pingjia.png'></image>
-          <view>待评价</view>
-        </navigator> -->
       </view>
     </view>
     <view class='other' style="margin-bottom: 100rpx;">

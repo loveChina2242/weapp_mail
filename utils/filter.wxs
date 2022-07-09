@@ -1,0 +1,38 @@
+//手机号隐藏
+var sub = function (str, startLength, endLength) {
+	if (str.length == 0 || str == undefined) {
+		return "";
+	}
+	var length = str.length;
+	if (length >= startLength + endLength) {
+		//判断当字符串长度为二时,隐藏末尾
+		if (length === 2) {
+			return str.substring(0, 1) + '*';
+		} else if (3 <= length && length <= 10) {
+			return str.substring(0, 1) + '**';
+		}
+		//判断字符串长度大于首尾字符串长度之和时,隐藏中间部分
+		else if (length >= 11) {
+			return str.substring(0, startLength) + "****" + str.substring(length - endLength, length);
+		} else {
+			return str
+		}
+	}
+}
+//取首字母
+var portrait = function (str) {
+	var newstr = str.slice(0, 1).toUpperCase()
+	return newstr
+}
+
+
+
+//保留两位小数
+var toFixed = function (value) {
+	return value.toFixed(2) 
+}
+module.exports = {
+	sub: sub,
+	portrait: portrait,
+	toFixed:toFixed
+}

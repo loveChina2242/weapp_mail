@@ -2,8 +2,6 @@
 Page({
   onShow(){
    let count =  wx.getStorageSync('country')
-    // let arr = getApp()
-    // console.log(arr.data.country);
     this.setData({
       count:count
     })
@@ -11,9 +9,10 @@ Page({
   data: {
     count:'',
     swiperImg:[
-      {index:1,img:'../../assets/images/1.jpeg'},
-      {index:2,img:'../../assets/images/2.jpeg'},
-      {index:3,img:'../../assets/images/3.jpeg'},
+      {index:1,img:'../../assets/images/轮播图.png'},
+      {index:2,img:'../../assets/images/轮播图.png'},
+      {index:3,img:'../../assets/images/轮播图.png'},
+      
     ],
     show: false,
     btnMsg:[

@@ -11,6 +11,11 @@ page{
 
   width: 250rpx;
   margin: auto;
-  color: white;
+  color: rgb(8, 45, 114);
   font-size: 28rpx;
+}
+.footer{
+  position: fixed;
+  bottom:60rpx;
+  left: 264rpx;
 }

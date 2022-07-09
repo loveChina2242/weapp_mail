@@ -19,6 +19,7 @@
 .itemImg{
   width: 700rpx;
   height: 300rpx;
+  border-radius: 4px;
 }
 .locatBody{
   position: absolute;
@@ -37,7 +38,7 @@
 }
 
 .itemtext{
-  font-size: 28px;
+  font-size: 24px;
 }
  .img{
   width: 100rpx;
@@ -102,13 +103,13 @@
   height: 100%;
 }
 .jsuanImg{
-  width: 70px;
-  height: 70px;
+  width: 140rpx;
+  height: 140rpx;
   margin: 10rpx 12rpx;
 }
 .easyText{
   font-weight: 550;
-  margin-left: 18px;
+  margin-left: 36rpx;
 }
 .tranImg{
   width: 100%;
@@ -131,31 +132,34 @@
 
 }
 .popupBox{
-  width: 310px;
+  width: 620rpx;
   height: 200px;
   text-align: center;
 }
 .popuBtn{
-  width: 295px;
+  width: 582rpx;
   margin: auto;
 display: flex;
 justify-content: flex-start;
 flex-wrap: wrap;
 }
 .popubtnItem{
-  width: 228rpx;
+  width: 255rpx;
   height: 80rpx;
-  margin:8px ;
+  margin:16rpx ;
   line-height: 80rpx;
   border: 1px solid rgb(60, 154, 216);
   color: rgb(0, 0, 0);
+}
 
+.popuptext{
+  margin:20rpx;
 }
 .gotranBtn{
   width: 360rpx;
 }
 .popufooter {
-margin-top: 20rpx;
+  margin: 20rpx 119rpx;
 }
 /* .popuBtn :active{
   background-color: cornflowerblue;

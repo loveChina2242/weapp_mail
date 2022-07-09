@@ -45,56 +45,126 @@
   font-size: 24rpx;
   text-align: left;
 }
+
 .copy {
 
   border-radius: 8rpx;
   background-color: rgba(217, 241, 221, 100);
   color: rgba(64, 184, 80, 100);
   font-size: 24rpx;
-  text-align:left;
+  text-align: left;
   border: 1px solid rgba(217, 241, 221, 100);
 }
-.order{
+
+.order {
   padding: 30rpx 20rpx;
 }
-.flexitem{
+
+.flexitem {
   display: flex;
   justify-content: space-between;
   margin: 20rpx 0;
   font-size: 28rpx;
 }
-.van-cell__label{
+
+.van-cell__label {
   width: 400rpx;
   color: red;
 }
-.van-cell__title{
+
+.van-cell__title {
   text-align: left;
 }
-.van-icon-coupon-o{
+
+.van-icon-coupon-o {
   color: red;
 }
 
-.d{
+.d {
   display: flex;
   justify-content: space-between;
-
 }
-.van-submit-bar .van-submit-bar__bar{
+
+/* .van-submit-bar{
+  z-index: 0;
+} */
+.van-submit-bar .van-submit-bar__bar {
   border: 1px solid #ccc;
   justify-content: space-between;
   padding: 10rpx;
 }
-.van-submit-bar .van-submit-bar__safe{
+
+.van-submit-bar .van-submit-bar__safe {
   height: 0;
 }
-.popupcontext{
-   padding: 20rpx;
+
+.popupcontext {
+  padding: 20rpx;
 
 }
-.closebtn{
+
+.closebtn {
   color: #fff;
   width: 400rpx;
-  margin:10rpx auto 200rpx;
+  margin: 10rpx auto 200rpx;
   border-radius: 20rpx;
   background-color: #4fa949;
+}
+
+.flexitem2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.van-radio {
+  padding: 10rpx 20rpx;
+}
+
+.counplist .van-cell__value {
+  color: rgb(255, 0, 0);
+}
+
+.counplist .van-cell__title {
+  font-weight: 600;
+}
+
+.title {
+  margin: 20rpx;
+  line-height: 29px;
+  color: rgba(16, 16, 16, 100);
+  font-size: 20px;
+  text-align: center;
+}
+
+.twobtn {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.flexitem4 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn1 {
+  width: 180px;
+  height: 36px;
+  border-radius: 999px;
+  font-size: 14px;
+  margin: 40rpx;
+}
+
+.btn2 {
+  background-color: #dbf2ff;
+  color: rgba(1, 154, 246, 100);
+  border: 1px solid #019af6;
+}
+
+.btn3 {
+  color: rgba(255, 255, 255, 100);
+
+  background-color: rgba(1, 154, 246, 100);
 }

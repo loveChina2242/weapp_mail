@@ -1,72 +1,87 @@
-.content{
+.content {
   width: 694rpx;
-height: 300rpx;
-opacity: 0.85;
-font-size: 28rpx;
-text-align: left;
-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
-margin:20rpx auto 0;
-border: 1px solid rgba(255, 255, 255, 100);
+  height: 300rpx;
+  opacity: 0.85;
+  font-size: 28rpx;
+  text-align: left;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  margin: 20rpx auto 0;
+  border: 1px solid rgba(255, 255, 255, 100);
 }
-.order{
- margin-bottom: 40rpx;
-height: 44rpx;
-color: rgba(16, 16, 16, 100);
-font-size: 30rpx;
-text-align: left;
-font-family: PingFangSC-regular;
+
+.order {
+  margin-bottom: 40rpx;
+  height: 44rpx;
+  color: rgba(16, 16, 16, 100);
+  font-size: 30rpx;
+  text-align: left;
+  font-family: PingFangSC-regular;
 }
-.icon{
+
+.icon {
   width: 52rpx;
-height: 52rpx;
+  height: 52rpx;
 }
-.safe{
+
+.safe {
   display: flex;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
-.baojia{
+
+.baojia {
   width: 72rpx;
-height: 50rpx;
-font-size: 34rpx;
-font-weight: 600;
-text-align: left;
-margin:0 20rpx 40rpx;
+  height: 50rpx;
+  font-size: 34rpx;
+  font-weight: 600;
+  text-align: left;
+  margin: 0 20rpx 40rpx;
 }
-.ipt{
+
+.ipt {
   border-radius: 22rpx;
-color: rgba(136, 136, 136, 100);
-font-size: 26rpx;
-text-align: left;
-font-family: Microsoft Yahei;
-border: 1px solid rgba(187, 187, 187, 100);
+  color: rgba(136, 136, 136, 100);
+  font-size: 26rpx;
+  text-align: left;
+  font-family: Microsoft Yahei;
+  border: 1px solid rgba(187, 187, 187, 100);
+  padding-left: 20rpx;
+
 }
-.pd{
+
+.pd {
   padding: 30rpx;
 }
-.mailtext{
-  font-size: 22rpx;
-  color:  rgba(236, 6, 6, 100);
+
+.mailtext {
+  font-size: 24rpx;
+  color: rgba(236, 6, 6, 100);
+  margin-left: 10rpx;
 }
-.icon1{
+
+.icon1 {
   width: 60rpx;
   height: 30rpx;
 }
-.tip{
+
+.tip {
   margin: 20rpx auto;
 }
-.diushi{
+
+.diushi {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ccc;
 }
-.diutext{
-  font-size: 32rpx;
+
+.diutext {
+  font-size: 30rpx;
 }
-.free{
-  width: 300rpx;
-height: 40rpx;
-font-size: 32rpx;
-margin-top: 10rpx;
+
+.free {
+  width: 600rpx;
+  height: 40rpx;
+  font-size: 30rpx;
+  margin-top: 10rpx;
 }
 
 .bottom {
@@ -83,6 +98,7 @@ margin-top: 10rpx;
   line-height: 100rpx;
   color: white;
   font-size: 28rpx;
+  text-align: center;
 }
 
 .btncolor1 {

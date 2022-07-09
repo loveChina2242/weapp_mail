@@ -13,7 +13,7 @@ Page({
     ],
       B:[
         {name:" 巴哈马",egname:'Bahamas'},
-        {name:"巴林Bahrain",egname:'Bahrain'},
+        {name:"巴林",egname:'Bahrain'},
         {name:"孟加拉 ",egname:'Bangladesh'},
         {name:"巴巴多斯 ",egname:'Barbados'},
     ],
@@ -59,7 +59,10 @@ Page({
  }else{
    return
  }
-
+  },
+  onLoad(){
+   let e = {detail:''}
+    this.onSearch(e)
   },
   // search
   onSearch(e){

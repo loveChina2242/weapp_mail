@@ -4,7 +4,7 @@
     <van-field wx:for="{{Info}}" wx:key="*this" value="{{ item.value }}"  clearable
      label="{{item.title}}"bind:input="onblur" placeholder="{{item.plaText}}" data-id="{{index}}" /> -->
 
-     <van-field value="{{ Info.name }}" bind:input="getValue" type="number" label="Name" 
+     <van-field value="{{ Info.name }}" bind:input="getValue" type="text" label="Name" 
     placeholder="Please enter the Name" error-message="{{errmsg}}" />
 
     <van-field value="{{ Info.phone }}" bind:input="getPhone" type="number" error-message="{{errmsg2}}" label="Phone" 
@@ -16,14 +16,11 @@
     <van-field value="{{ Info.city }}" type="text" label="City" 
     placeholder="Please enter the city" bind:input="getcity"   error-message="{{errmsg4}}"/>
 
-    <van-field value="{{ Info.postcode }}" type="text" label="PostCode" 
+    <van-field value="{{ Info.postcode }}" type="number" label="PostCode" 
     placeholder="Please enter the postcode" bind:input="getcode" error-message="{{errmsg5}}"  />
 
     <van-field value="{{ Info.country }}" type="text" label="Country"
      placeholder="Please enter the country"  bind:input="getcountry" error-message="{{errmsg6}}"/>
-
-
-
 
 
 

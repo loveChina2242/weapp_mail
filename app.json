@@ -1,7 +1,6 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
     "pages/coupon/coupon",
     "pages/order/order",
     "pages/user/user",
@@ -20,9 +19,12 @@
     "pages/newAddress/newAddress",
     "components/orderlist/orderlist",
     "pages/paydetail/paydetail",
+    "pages/unpaid/unpaid",
     "pages/packagelist/packagelist",
     "components/createorderNum/createorderNum",
-    "components/areainfo/areainfo"
+    "components/areainfo/areainfo",
+    "components/orderdisplay/orderdisplay"
+  
    
   ],
   "tabBar": {
@@ -57,7 +59,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "飞象转运",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
